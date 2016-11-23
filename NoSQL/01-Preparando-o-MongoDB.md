@@ -1,6 +1,6 @@
-### Preparando o Banco de Dados Mongo DB.
+##Preparando o Banco de Dados Mongo DB.
 
-##Iniciar o serviço para o Mongo DB:
+###Iniciar o serviço para o Mongo DB:
 
 
 No Primeiro Terminal (cmd como Administrador):
