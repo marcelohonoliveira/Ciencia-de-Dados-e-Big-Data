@@ -1,5 +1,11 @@
 ## Exercício 01
 
+Criando um Banco:
+
+```javascript
+use Exercicio01
+```
+
 Escolha 3 colegas e:
 * Insira no banco informações sobre você e seus colegas como nome, data de nascimento
 disciplinas cursadas e em curso na PUC
