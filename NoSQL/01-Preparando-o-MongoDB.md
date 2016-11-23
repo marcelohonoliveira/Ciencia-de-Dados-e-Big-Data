@@ -7,7 +7,7 @@ No Primeiro Terminal (cmd):
 ```
 mkdir C:\Program Files\MongoDB\Data\
 cd C:\Program Files\MongoDB\Server\3.2\bin
-mongod --dbpath="C:/Program Files/MongoDB/Data"
+mongod --dbpath="C:/Program Files/MongoDB/Data" --storageEngine=mmapv1
 ```
 
 No Segundo Terminal (cmd):
