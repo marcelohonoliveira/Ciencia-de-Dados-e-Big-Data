@@ -12,7 +12,7 @@ disciplinas cursadas e em curso na PUC
 * Procure no banco a pessoa com a menor data de nascimento
 
 ```javascript
-db.Alunos.InsertMany( [{
+db.Alunos.insertMany( [{
                         "nome": "Aluno 01",
                         "dataNascimento": ISODate("1980-01-01T00:00:00Z"),
                         "disciplinasCursadas":	[
