@@ -1,6 +1,6 @@
-##Preparando o Banco de Dados Mongo DB.
+##Preparando o Banco de Dados Mongo DB
 
-###Iniciar o serviço para o Mongo DB:
+###Iniciar o serviço para o Mongo DB
 
 
 No Primeiro Terminal (cmd como Administrador):
@@ -10,6 +10,7 @@ cd C:\Program Files\MongoDB\Server\3.2\bin
 mongod --dbpath="C:/Program Files/MongoDB/Data" --storageEngine=mmapv1
 ```
 
+###Executar o MongoDB
 No Segundo Terminal (cmd):
 ```
 cd C:\Program Files\MongoDB\Server\3.2\bin
