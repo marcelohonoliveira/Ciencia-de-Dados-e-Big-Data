@@ -86,7 +86,11 @@ db.Alunos.update( {"nome": "Aluno 01",
 
 * Apague um de seus colegas
 ```javascript
-ToDo
+try {
+   db.Alunos.deleteOne( {"nome": "Aluno 03" } );
+} catch (e) {
+   print(e);
+}
 ```
 
 * Copie e cole essas operações em um arquivo e adicione em seu github em uma pasta chamada aula2
