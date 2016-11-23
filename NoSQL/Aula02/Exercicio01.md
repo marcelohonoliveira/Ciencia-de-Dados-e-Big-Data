@@ -93,4 +93,4 @@ try {
 }
 ```
 
-* Copie e cole essas operações em um arquivo e adicione em seu github em uma pasta chamada aula2
+* Copie e cole essas operações em um arquivo e adicione em seu github em uma pasta chamada Aula02
