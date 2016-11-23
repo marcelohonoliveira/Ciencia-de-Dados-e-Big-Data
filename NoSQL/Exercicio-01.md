@@ -1,6 +1,9 @@
-### Exercício 01
+## Exercício 01
 
-
+Escolha 3 colegas e:
+* Insira no banco informações sobre você e seus colegas como nome, data de nascimento
+disciplinas cursadas e em curso na PUC
+* Procure no banco a pessoa com a menor data de nascimento
 
 ```javascript
 db.Alunos.InsertMany( [{
