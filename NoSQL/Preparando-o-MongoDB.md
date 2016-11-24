@@ -25,7 +25,7 @@ cd ~/Aulas/mongodb; ./bin/mongod --dbpath=../dados
 ```
 
 ####Executar o MongoDB
-No Segundo Terminal (cmd):
+No Segundo Terminal:
 ```
 cd ~/Aulas/mongodb; ./bin/mongo
 ```
