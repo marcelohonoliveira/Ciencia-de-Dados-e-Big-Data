@@ -47,7 +47,7 @@ db.Alunos.insertMany([
         "NSQ_nota" : 0
 }])
 ```
->Saída:
+>_Saída:_
 
 ```javascript
 {
@@ -64,7 +64,7 @@ db.Alunos.insertMany([
 ```javascript
 db.Alunos.find().sort({data_nascimento: 1}).limit(1)
 ```
->Saída:
+>_Saída:_
 
 ```javascript
 {
@@ -87,7 +87,7 @@ db.Alunos.find().sort({data_nascimento: 1}).limit(1)
 db.Alunos.update( {"nome_aluno": "Aluno 01"}, {$set: {"NSQ_nota" : 5}})
 ```
 
->Saída:
+>_Saída:_
 
 ```javascript
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
@@ -102,7 +102,7 @@ try {
 }
 ```
 
->Saída:
+>_Saída:_
 
 ```javascript
 { "acknowledged" : true, "deletedCount" : 1 }
