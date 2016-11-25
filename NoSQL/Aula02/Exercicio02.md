@@ -2,13 +2,6 @@
 
 ###Contando palavras
 
-
-Criando um Banco:
-
-```javascript
-use Exercicio02
-```
-
 Primeiramente importe os dados do arquivo ~Aulas/nosql-class/aula2/Vocabulary.json para o banco de dados nosqlclass e a coleção Vocabulary
 ./bin/mongoimport -d nosqlclass -c Vocabulary nosql-class/aula2/Vocabulary.json
 
