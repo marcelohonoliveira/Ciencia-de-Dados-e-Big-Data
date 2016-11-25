@@ -1,4 +1,10 @@
-﻿## Exercício 03
+## Exercício 03
+
+Criando um Banco:
+
+```javascript
+use Exercicio03
+```
 
 ###Sistema de cadastro de alunos:
 
