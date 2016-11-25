@@ -19,7 +19,7 @@ mongoimport --db Exercicio02 --collection Vocabulary --file "E:\Google Drive\02 
 
 >_Saída:_
 
-```javascript
+```
 2016-11-25T19:29:12.549-0200    connected to: localhost
 2016-11-25T19:29:14.005-0200    [........................] Exercicio02.Vocabulary       205KB/22.1MB (0.9%)
 2016-11-25T19:29:16.957-0200    [#####...................] Exercicio02.Vocabulary       5.36MB/22.1MB (24.2%)
