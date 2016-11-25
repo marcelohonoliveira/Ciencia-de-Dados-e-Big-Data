@@ -18,7 +18,7 @@ db.Alunos.insertMany([{
 			,"ILE_concluida"	: True
 			,"ILE_nota"		: 70
 			,"AQD_concluida"	: False
-			,"AQD_nota		: 0
+			,"AQD_nota"		: 0
 			,"NSQ_concluida"	: False
 			,"NSQ_nota"		: 0
 		 }
@@ -30,7 +30,7 @@ db.Alunos.insertMany([{
 			,"ILE_concluida"	: True
 			,"ILE_nota"		: 50
 			,"AQD_concluida"	: False
-			,"AQD_nota		: 0
+			,"AQD_nota"		: 0
 			,"NSQ_concluida"	: False
 			,"NSQ_nota"		: 0
 		 }
@@ -42,7 +42,7 @@ db.Alunos.insertMany([{
 			,"ILE_concluida"	: True
 			,"ILE_nota"		: 30
 			,"AQD_concluida"	: False
-			,"AQD_nota		: 0
+			,"AQD_nota"		: 0
 			,"NSQ_concluida"	: False
 			,"NSQ_nota"		: 0
 		 }])
