@@ -1,12 +1,12 @@
 ## Exercício 03
 
+###Sistema de cadastro de alunos:
 Criando um Banco:
 
 ```javascript
 use Exercicio03
 ```
 
-###Sistema de cadastro de alunos:
 
 * O sistema deve permitir inserir um novo aluno com nome, data de nascimento
 * Adicionar a um aluno disciplinas que está cursando e cursadas
