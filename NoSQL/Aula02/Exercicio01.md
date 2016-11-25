@@ -67,7 +67,19 @@ db.Alunos.find().sort({data_nascimento: 1}).limit(1)
 >Saída:
 
 ```javascript
-{ "_id" : ObjectId("58386f7e9a48a513ac16e796"), "nome_aluno" : "Aluno 03", "data_nascimento" : ISODate("1978-12-01T00:00:00Z"), "IBD_cursada" : 1, "IBD_nota" : 40, "ILE_cursada" : 1, "ILE_nota" : 30, "AQD_cursada" : 0, "AQD_nota" : 0, "NSQ_cursada" : 0, "NSQ_nota" : 0 }
+{
+        "_id" : ObjectId("58386f7e9a48a513ac16e796"),
+        "nome_aluno" : "Aluno 03",
+        "data_nascimento" : ISODate("1978-12-01T00:00:00Z"),
+        "IBD_cursada" : 1,
+        "IBD_nota" : 40,
+        "ILE_cursada" : 1,
+        "ILE_nota" : 30,
+        "AQD_cursada" : 0,
+        "AQD_nota" : 0,
+        "NSQ_cursada" : 0,
+        "NSQ_nota" : 0
+}
 ```
 
 * Atualize a sua nota na disciplina NoSQL para 5.
