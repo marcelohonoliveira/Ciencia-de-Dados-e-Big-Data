@@ -7,8 +7,7 @@ use Exercicio01
 ```
 
 Escolha 3 colegas e:
-* Insira no banco informações sobre você e seus colegas como nome, data de nascimento
-disciplinas cursadas e em curso na PUC
+* Insira no banco informações sobre você e seus colegas como nome, data de nascimento, disciplinas cursadas e em curso na PUC.
 ```javascript
 db.Alunos.insertMany([
 {
@@ -61,7 +60,7 @@ db.Alunos.insertMany([
 }
 ```
 
-* Procure no banco a pessoa com a menor data de nascimento
+* Procure no banco a pessoa com a menor data de nascimento.
 ```javascript
 db.Alunos.find().sort({data_nascimento: 1}).limit(1)
 ```
@@ -71,7 +70,7 @@ db.Alunos.find().sort({data_nascimento: 1}).limit(1)
 { "_id" : ObjectId("58386f7e9a48a513ac16e796"), "nome_aluno" : "Aluno 03", "data_nascimento" : ISODate("1978-12-01T00:00:00Z"), "IBD_cursada" : 1, "IBD_nota" : 40, "ILE_cursada" : 1, "ILE_nota" : 30, "AQD_cursada" : 0, "AQD_nota" : 0, "NSQ_cursada" : 0, "NSQ_nota" : 0 }
 ```
 
-* Atualize a sua nota na disciplina NoSQL para 5
+* Atualize a sua nota na disciplina NoSQL para 5.
 ```javascript
 db.Alunos.update( {"nome_aluno": "Aluno 01"}, {$set: {"NSQ_nota" : 5}})
 ```
@@ -82,7 +81,7 @@ db.Alunos.update( {"nome_aluno": "Aluno 01"}, {$set: {"NSQ_nota" : 5}})
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 ```
 
-* Apague um de seus colegas
+* Apague um de seus colegas.
 ```javascript
 try {
    db.Alunos.deleteOne( {"nome_aluno": "Aluno 02" } );
@@ -97,4 +96,4 @@ try {
 { "acknowledged" : true, "deletedCount" : 1 }
 ```
 
-* Copie e cole essas operações em um arquivo e adicione em seu github em uma pasta chamada Aula02
+* Copie e cole essas operações em um arquivo e adicione em seu github em uma pasta chamada Aula02.
