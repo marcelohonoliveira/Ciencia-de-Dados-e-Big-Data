@@ -1,5 +1,5 @@
 <img src="/zImagens/mongodb.png" align="right" />
-##[NSQ - Bancos de dados Não Relacionais](/NoSQL)
+##[NSQ - Bancos de Dados Não Relacionais](/NoSQL)
 Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](https://github.com/gcouti/nosql-class).
 
 1. [Aula 02](/NoSQL/Aula02) - Operações básicas em MongoDB
