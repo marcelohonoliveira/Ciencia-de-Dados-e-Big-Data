@@ -1,4 +1,4 @@
-<img src="/zImagens/data-science-word-cloud.jpg" align="right" width="35%" height="35%"/>
+<img src="/zImagens/word-cloud-big-data-1.jpg" align="right" width="35%" height="35%"/>
 # Ciência de Dados e Big Data
 Repositório dedicado às atividades do Curso de Pós-gradução em Ciência de Dados e Big Data (Oferta 1) da PUC Minas - Campus Praça da Liberdade - Belo Horizonte/MG.
 
