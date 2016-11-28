@@ -7,7 +7,7 @@ Trabalhos apresentados nesta disciplina
 
 1. [Desafio](/LinguagensEstatisticas/Desafio) - Solução de Exercícios em R
 
-2. [Lei Benford](/LinguagensEstatisticas/ArtigoLeiDeBenford) - Artigo sobre a Lei Benford
+2. [Lei de Benford](/LinguagensEstatisticas/ArtigoLeiDeBenford) - Artigo sobre a Lei Benford
 
 
 ## [NSQ - Bancos de Dados Não Relacionais](/NoSQL)
