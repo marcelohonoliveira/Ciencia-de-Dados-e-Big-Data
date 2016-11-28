@@ -12,7 +12,7 @@ _Sem arquivos._ :-(
 _Sem arquivos._ :-(
 
 ##[NSQ - Bancos de Dados Não Relacionais](/NoSQL)
-Soluções dos exercícios propostos nos Slides de aula disponíveis [aqui](https://github.com/gcouti/nosql-class).
+Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](https://github.com/gcouti/nosql-class).
 
 1. [Aula 02](/NoSQL/Aula02) - Operações básicas em MongoDB
 
