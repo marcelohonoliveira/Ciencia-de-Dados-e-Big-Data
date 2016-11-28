@@ -6,7 +6,12 @@ Repositório dedicado às atividades do Curso de Pós-gradução em Ciência de 
 _Sem arquivos._ :-(
 
 ## ILE - Introdução às Linguagens Estatísticas
-_Sem arquivos._ :-(
+Trabalhos apresentados nesta disciplina
+
+1. [Desafio](/01 Desafio) - Solução de Exercícios em R
+
+2. [Lei Benford](/02 Artigo - Lei Benford) - Artigo sobre a Lei Benford
+
 
 ## AQD - Arquitetura e Qualidade de Dados
 _Sem arquivos._ :-(
