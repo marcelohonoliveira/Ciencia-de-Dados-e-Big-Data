@@ -2,7 +2,7 @@
 # Ciência de Dados e Big Data
 Repositório dedicado às atividades do Curso de Pós-gradução em Ciência de Dados e Big Data.
 
-## ILE - Introdução às Linguagens Estatísticas
+## [ILE - Introdução às Linguagens Estatísticas](/LinguagensEstatisticas)
 Trabalhos apresentados nesta disciplina
 
 1. [Desafio](/01 Desafio) - Solução de Exercícios em R
@@ -10,7 +10,7 @@ Trabalhos apresentados nesta disciplina
 2. [Lei Benford](/02 Artigo - Lei Benford) - Artigo sobre a Lei Benford
 
 
-##[NSQ - Bancos de Dados Não Relacionais](/NoSQL)
+## [NSQ - Bancos de Dados Não Relacionais](/NoSQL)
 Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](https://github.com/gcouti/nosql-class).
 
 1. [Aula 01](/NoSQL/Aula01) - Introdução
