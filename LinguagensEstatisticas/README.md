@@ -1,13 +1,7 @@
-<img src="/zImagens/mongodb.png" align="right" />
-##[NSQ - Bancos de Dados Não Relacionais](/NoSQL)
-Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](https://github.com/gcouti/nosql-class).
+<img src="/zImagens/statistic.png" align="right" width="35%" height="35%"/>
+##[ILE - Introdução às Linguagens Estatísticas](/LinguagensEstatisticas)
+Trabalhos apresentados nesta disciplina
 
-1. [Aula 01](/NoSQL/Aula01) - Introdução
+1. [Desafio](/01 Desafio) - Solução de Exercícios em R
 
-2. [Aula 02](/NoSQL/Aula02) - Operações básicas em MongoDB
-
-3. [Aula 03](/NoSQL/Aula03) - MapReduce e Agregação
-
-4. [Aula 04](/NoSQL/Aula04) - Índices
-
-5. [Aula 05](/NoSQL/Aula05) - Casos de Uso
+2. [Lei Benford](/02 Artigo - Lei Benford) - Artigo sobre a Lei Benford
