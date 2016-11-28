@@ -1,6 +1,6 @@
 <img src="/zImagens/data-science-word-cloud.jpg" align="right" width="35%" height="35%"/>
 # Ciência de Dados e Big Data
-Repositório dedicado às atividades do Curso de Pós-gradução em Ciência de Dados e Big Data.
+Repositório dedicado às atividades do Curso de Pós-gradução em Ciência de Dados e Big Data (Oferta 1) da PUC Minas.
 
 ## [ILE - Introdução às Linguagens Estatísticas](/LinguagensEstatisticas)
 Trabalhos apresentados nesta disciplina
