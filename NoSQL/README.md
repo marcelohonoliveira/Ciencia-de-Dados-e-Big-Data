@@ -1,4 +1,4 @@
-<img src="/zImagens/mongodb.png" align="right" />
+<img src="/zImagens/NoSQL.jpg" align="right" width="40%" height="40%"/>
 ##[NSQ - Bancos de Dados Não Relacionais](/NoSQL)
 Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](https://github.com/gcouti/nosql-class).
 
