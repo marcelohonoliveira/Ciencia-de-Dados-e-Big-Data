@@ -1,4 +1,4 @@
-<img src="/zImagens/statistic.png" align="right" width="35%" height="35%"/>
+<img src="/zImagens/statistic.png" align="right" width="25%" height="25%"/>
 ##[ILE - Introdução às Linguagens Estatísticas](/LinguagensEstatisticas)
 Trabalhos apresentados nesta disciplina
 
