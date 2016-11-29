@@ -29,7 +29,7 @@ Complete o código do arquivo que está dentro de ~Aulas/nosql-class/aula2/ex2.p
 informando o tipo da palavra.
 * Conte o total de cada um dos tipos que você criou.
 
-Solução disponível [aqui] (../Exercicio02).
+Solução disponível [aqui] (Aula02/Exercicio02).
 
-<img src="../Exercicio02/Screenshot_Exercicio02.png" align="right" width="100%" height="100%"/>
+<img src="Aula02/Exercicio02/Screenshot_Exercicio02.png" align="right" width="100%" height="100%"/>
 
