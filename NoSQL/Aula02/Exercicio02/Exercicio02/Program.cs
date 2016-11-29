@@ -26,7 +26,7 @@ namespace Exercicio02
                 db.Vocabulary.remove({ label: {$type: 6}})
                     WriteResult({ "nRemoved" : 12516 })
 
-        Remover documentos cujo "_id" é do tipo "ObjectId"
+        4) Remover documentos cujo "_id" é do tipo "ObjectId"
                 db.Vocabulary.find({ _id: {$type: 7}}).count()
                     44
                 db.Vocabulary.remove({ _id: {$type: 7}})
@@ -59,8 +59,6 @@ namespace Exercicio02
                                  orderby vocabulary._id ascending
                                  select vocabulary;
 
-
-
                 foreach (var doc in resultado2)
                 {
                     if (doc._id.Length > 1 && doc._id.Substring(0, 1).Equals("@"))
@@ -68,11 +66,13 @@ namespace Exercicio02
                         twitter++;
                         Console.WriteLine("{0}. Usuário Twitter: {1}", twitter, doc._id);
                     }
+
                     if (doc._id.Length > 1 && doc._id.Substring(0, 1).Equals("#"))
                     {
                         hashtag++;
                         Console.WriteLine("{0}. Hashtag: {1}", hashtag, doc._id);
                     }
+
                     if (doc._id.Length > 4 && doc._id.Substring(0, 4).Equals("http"))
                     {
                         url++;

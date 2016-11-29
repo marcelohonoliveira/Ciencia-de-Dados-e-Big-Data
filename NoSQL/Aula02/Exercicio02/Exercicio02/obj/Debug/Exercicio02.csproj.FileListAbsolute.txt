@@ -10,3 +10,15 @@ E:\Projetos\Marcelo\Exercicio02\Exercicio02\bin\Debug\MongoDB.Driver.Core.xml
 E:\Projetos\Marcelo\Exercicio02\Exercicio02\obj\Debug\Exercicio02.csprojResolveAssemblyReference.cache
 E:\Projetos\Marcelo\Exercicio02\Exercicio02\obj\Debug\Exercicio02.exe
 E:\Projetos\Marcelo\Exercicio02\Exercicio02\obj\Debug\Exercicio02.pdb
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\Exercicio02.exe.config
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\obj\Debug\Exercicio02.exe
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\obj\Debug\Exercicio02.pdb
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\Exercicio02.exe
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\Exercicio02.pdb
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\MongoDB.Bson.dll
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\MongoDB.Driver.Core.dll
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\MongoDB.Driver.dll
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\MongoDB.Bson.xml
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\MongoDB.Driver.xml
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\bin\Debug\MongoDB.Driver.Core.xml
+E:\Google Drive\03 GitHub\Ciencia-de-Dados-e-Big-Data\NoSQL\Aula02\Exercicio02\Exercicio02\obj\Debug\Exercicio02.csprojResolveAssemblyReference.cache
