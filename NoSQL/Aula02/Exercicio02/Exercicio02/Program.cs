@@ -66,18 +66,18 @@ namespace Exercicio02
                         twitter++;
                         Console.WriteLine("{0}. Usuário Twitter: {1}", twitter, doc._id);
                     }
-
-                    if (doc._id.Length > 1 && doc._id.Substring(0, 1).Equals("#"))
-                    {
-                        hashtag++;
-                        Console.WriteLine("{0}. Hashtag: {1}", hashtag, doc._id);
-                    }
-
-                    if (doc._id.Length > 4 && doc._id.Substring(0, 4).Equals("http"))
-                    {
-                        url++;
-                        Console.WriteLine("{0}. URL: {1}", url, doc._id);
-                    }
+                    else
+                        if (doc._id.Length > 1 && doc._id.Substring(0, 1).Equals("#"))
+                        {
+                            hashtag++;
+                            Console.WriteLine("{0}. Hashtag: {1}", hashtag, doc._id);
+                        }
+                        else
+                            if (doc._id.Length > 4 && doc._id.Substring(0, 4).Equals("http"))
+                            {
+                                url++;
+                                Console.WriteLine("{0}. URL: {1}", url, doc._id);
+                            }
                 }
 
                 float total = (float)(twitter + hashtag + url);
