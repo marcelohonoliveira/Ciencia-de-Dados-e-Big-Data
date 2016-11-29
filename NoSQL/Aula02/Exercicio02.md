@@ -7,7 +7,7 @@ Primeiramente importe os dados do arquivo ~Aulas/nosql-class/aula2/Vocabulary.js
 
 ```javascript
 cd C:\Program Files\MongoDB\Server\3.2\bin
-mongoimport --db Exercicio02 --collection Vocabulary --file "E:\Google Drive\02 Pós CDBD\04 NSQ - Banco de dados Não Relacionais\01 Aulas\02 Aula 02\Vocabulary.json"
+mongoimport --db Exercicio02 --collection Vocabulary --file "E:\Google Drive\02 Pós CDBD\04 NSQ - Bancos de dados Não Relacionais\01 Aulas\02 Aula 02\Vocabulary.json"
 ```
 
 >_Saída:_
