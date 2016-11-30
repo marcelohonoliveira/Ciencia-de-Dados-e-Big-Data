@@ -14,10 +14,9 @@ Resposta:
 
 ## Exercício 02
 
-Dentro de sua empresa certamente existem pontos que podem ser adaptados para a
+Dentro de sua empresa certamente existem pontos que podem ser adaptados para a melhorar a infraestrutura.
 
-Explique a infraestrutura atual e o que você mudaria para
-melhorar a eficiência
+Explique a infraestrutura atual e o que você mudaria para melhorar a eficiência.
 
 Pode ser alguma infraestrutura que já lidou no passado :)
 
