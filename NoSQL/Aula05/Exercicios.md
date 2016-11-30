@@ -8,9 +8,9 @@ Você e um grupo de amigos da faculdade decidem-se juntar e criar uma empresa de
 
 O que vocês devem fazer?
 >Resposta:
-```
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna quam. Donec sollicitudin risus nec justo mattis ultrices. Duis tempus lacus gravida velit feugiat, non lacinia nisi fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla enim metus, pellentesque at aliquet a, bibendum sit amet velit. Pellentesque vitae magna a sem sagittis dignissim in id mi. Aenean porta maximus lacus, quis tempor leo tempus accumsan. Aenean porta consequat euismod. Etiam varius faucibus turpis aliquam lacinia.
-```
+
 
 
 ## Exercício 02
@@ -21,6 +21,6 @@ Explique a infraestrutura atual e o que você mudaria para melhorar a eficiênci
 
 Pode ser alguma infraestrutura que já lidou no passado :)
 >Resposta:
-```
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna quam. Donec sollicitudin risus nec justo mattis ultrices. Duis tempus lacus gravida velit feugiat, non lacinia nisi fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla enim metus, pellentesque at aliquet a, bibendum sit amet velit. Pellentesque vitae magna a sem sagittis dignissim in id mi. Aenean porta maximus lacus, quis tempor leo tempus accumsan. Aenean porta consequat euismod. Etiam varius faucibus turpis aliquam lacinia.
-```
+|
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna quam. Donec sollicitudin risus nec justo mattis ultrices. Duis tempus lacus gravida velit feugiat, non lacinia nisi fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla enim metus, pellentesque at aliquet a, bibendum sit amet velit. Pellentesque vitae magna a sem sagittis dignissim in id mi. Aenean porta maximus lacus, quis tempor leo tempus accumsan. Aenean porta consequat euismod. Etiam varius faucibus turpis aliquam lacinia.|
+
