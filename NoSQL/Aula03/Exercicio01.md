@@ -2,7 +2,7 @@
 
 Na coleção Vocabulary
 
-A) Utilizando as funções de mapReduce do mongo, conte o número de palavras que terminam em ar, er, ir, or, ur.
+**A)** Utilizando as funções de mapReduce do mongo, conte o número de palavras que terminam em ar, er, ir, or, ur.
 
 
 ```javascript
@@ -42,7 +42,7 @@ db.resultado.find()
 { "_id" : "ir", "value" : 554 }
 ```
 
-B) Utilizando as funções de mapReduce do mongo, conte o total de cada caracter existente no vocabulario. Por exemplo:
+**B)** Utilizando as funções de mapReduce do mongo, conte o total de cada caracter existente no vocabulario. Por exemplo:
 
 aula -> a:2, u:1, l:1
 
