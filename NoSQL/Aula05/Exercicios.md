@@ -10,7 +10,9 @@ O que vocês devem fazer?
 
 ## Exercício 02
 
-Dentro de sua empresa certamente existem pontos que podem ser adaptados para a Explique a infraestrutura atual e o que você mudaria para
+Dentro de sua empresa certamente existem pontos que podem ser adaptados para a
+
+Explique a infraestrutura atual e o que você mudaria para
 melhorar a eficiência
 
 Pode ser alguma infraestrutura que já lidou no passado :)
