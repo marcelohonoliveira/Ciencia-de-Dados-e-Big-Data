@@ -11,3 +11,5 @@ Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](http
 4. [Aula 04](Aula04) - Índices
 
 5. [Aula 05](Aula05) - Casos de Uso
+
+6. [Seminários](NoSQL/Seminarios) - Apresentação do Case Cartola FC e MongoDB
