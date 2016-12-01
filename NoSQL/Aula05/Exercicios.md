@@ -4,10 +4,10 @@ Para cada uma das situações dos exercícios escolha a infraestrutura que você
 
 ## Exercício 01
 
-Você e um grupo de amigos da faculdade decidem-se juntar e criar uma empresa de na área de IoT. Todos seus amigos são excelentes programadores porém estão em dúvida como montar a infraestrutura para suportar a grande quantidade de dados gerados pelos sensores da aplicação.
+Você e um grupo de amigos da faculdade decidem-se juntar e criar uma empresa de tecnologia na área de IoT. Todos seus amigos são excelentes programadores porém estão em dúvida como montar a infraestrutura para suportar a grande quantidade de dados gerados pelos sensores da aplicação.
 
 O que vocês devem fazer?
->**Resposta:** _Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna quam. Donec sollicitudin risus nec justo mattis ultrices. Duis tempus lacus gravida velit feugiat, non lacinia nisi fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla enim metus, pellentesque at aliquet a, bibendum sit amet velit. Pellentesque vitae magna a sem sagittis dignissim in id mi. Aenean porta maximus lacus, quis tempor leo tempus accumsan. Aenean porta consequat euismod. Etiam varius faucibus turpis aliquam lacinia._
+>**Resposta:** _Sugere-se que o primeiro passo é saber qual o problema que teremos que resolver. Ou seja, o que a aplicação e sua infraestrutura terá de missão. Como o assunto é IoT e é um assunto muito novo, teremos poucos recursos para benchmarking. Então, em alguns momentos, a tentativa e erro deverá ser considerada. De forma simplista, pode-se se prever uma grande quantidade de dados armazenada e com crescimento rápido. A arquitera deverá suportar a carga incial de armazenamento e processamento, mas deverá ser pensada para uma alta escalabilidade._
 
 
 
@@ -18,5 +18,5 @@ Dentro de sua empresa certamente existem pontos que podem ser adaptados para a m
 Explique a infraestrutura atual e o que você mudaria para melhorar a eficiência.
 
 Pode ser alguma infraestrutura que já lidou no passado :)
->**Resposta:** _Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna quam. Donec sollicitudin risus nec justo mattis ultrices. Duis tempus lacus gravida velit feugiat, non lacinia nisi fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla enim metus, pellentesque at aliquet a, bibendum sit amet velit. Pellentesque vitae magna a sem sagittis dignissim in id mi. Aenean porta maximus lacus, quis tempor leo tempus accumsan. Aenean porta consequat euismod. Etiam varius faucibus turpis aliquam lacinia._
+>**Resposta:** _A empresa apresentou uma estrutura de dados ainda simples: Uma aplicação com um banco de dados interno desenvolvida por terceiro e todos os demais processos de escritório rodando em cima de planilhas Microsoft Excel. A principal mudança sugerida foi a centralização dos dados em um único repositório regido por uma aplicação de gestão administrativa. A parte de produção e venda ainda não existe. Consigo exergar uma oportunidade de NoSQL para loja virtual que esta sendo ainda pensada. A ideia seria uso de banco não relacional para implementação do catálogo de produtos já que os estes possuem um grande variedade de caracterísitcas técnicas._
 
