@@ -1,4 +1,10 @@
 ##Exercício 02
+
+```javascript
+cd "C:\Program Files\MongoDB\Server\3.2\bin"
+mongoimport --db Exercicio02 --collection Vocabulary --file "E:\Google Drive\02 Pós CDBD\04 NSQ - Bancos de dados Não Relacionais\01 Aulas\03 Aula 03\Vocabulary.json"
+```
+
 Utilizando a função de agregação contar quantos itens cujo o campo total seja maior do que 1000, agrupando-os por tipo, (campo type) e exiba o resultado em ordem crescente.
 
 No Mongo:
