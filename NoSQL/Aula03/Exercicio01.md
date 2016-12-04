@@ -4,42 +4,30 @@ Na coleção Vocabulary
 
 **A)** Utilizando as funções de mapReduce do mongo, conte o número de palavras que terminam em ar, er, ir, or, ur.
 
-
+No Mongo:
 ```javascript
-var map = function(){
-	emit(this.text.substring(this.text.length-2,this.text.length),1);
-}
+load("E:/Google Drive/02 Pós CDBD/04 NSQ - Bancos de dados Não Relacionais/01 Aulas/03 Aula 03/Exercicio01a.js")
+```
 
-var reduce = function(key, values){
-	return Array.sum(values);
-}
-
-db.Vocabulary.mapReduce(map,reduce,{query:
+>Saída:
+```javascript
 {
-		text:  /((ar)|(er)|(ir))$/
+        "result" : "conta_palavras",
+        "timeMillis" : 1834,
+        "counts" : {
+                "input" : 7302,
+                "emit" : 7302,
+                "reduce" : 361,
+                "output" : 5
+        },
+        "ok" : 1
 }
- , out:"resultado"})
-
-
-db.resultado.find()
-
-
-{
-	"result" : "resultado",
-	"timeMillis" : 282,
-	"counts" : {
-		"input" : 5846,
-		"emit" : 5846,
-		"reduce" : 177,
-		"output" : 3
-	},
-	"ok" : 1
-}
-
-db.resultado.find()
 { "_id" : "ar", "value" : 2950 }
 { "_id" : "er", "value" : 2342 }
 { "_id" : "ir", "value" : 554 }
+{ "_id" : "or", "value" : 1168 }
+{ "_id" : "ur", "value" : 288 }
+true
 ```
 
 **B)** Utilizando as funções de mapReduce do mongo, conte o total de cada caracter existente no vocabulario. Por exemplo:
