@@ -2,16 +2,17 @@
 
 Na coleção Vocabulary
 
+No CMD:
 ```javascript
 cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongoimport --db Exercicio01 --collection Vocabulary --file "E:\Google Drive\02 Pós CDBD\04 NSQ - Bancos de dados Não Relacionais\01 Aulas\03 Aula 03\Vocabulary.json"
-use Exercicio01
 ```
 
 **A)** Utilizando as funções de mapReduce do mongo, conte o número de palavras que terminam em ar, er, ir, or, ur.
 
 No Mongo:
 ```javascript
+use Exercicio01
 load("E:/Google Drive/02 Pós CDBD/04 NSQ - Bancos de dados Não Relacionais/01 Aulas/03 Aula 03/Exercicio01a.js")
 ```
 
@@ -46,6 +47,7 @@ Ex.: > load(“/home/nosql/Aulas/nosql-class/aula3/ex1.js”)
 
 No Mongo:
 ```javascript
+use Exercicio01
 load("E:/Google Drive/02 Pós CDBD/04 NSQ - Bancos de dados Não Relacionais/01 Aulas/03 Aula 03/Exercicio01b.js")
 ```
 
