@@ -6,14 +6,14 @@
 No Primeiro Terminal (cmd como Administrador):
 ```
 mkdir "C:\Program Files\MongoDB\Data\"
-cd C:\Program Files\MongoDB\Server\3.2\bin
+cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongod --dbpath="C:/Program Files/MongoDB/Data" --storageEngine=mmapv1
 ```
 
 ####Executar o MongoDB
 No Segundo Terminal (cmd):
 ```
-cd C:\Program Files\MongoDB\Server\3.2\bin
+cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongo
 ```
 ---
