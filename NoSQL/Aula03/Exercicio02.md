@@ -3,6 +3,7 @@ Utilizando a função de agregação contar quantos itens cujo o campo total sej
 
 No Mongo:
 ```javascript
+use Exercicio02
 load("E:/Google Drive/02 Pós CDBD/04 NSQ - Bancos de dados Não Relacionais/01 Aulas/03 Aula 03/Exercicio02.js")
 ```
 
