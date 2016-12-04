@@ -1,5 +1,6 @@
 ##Exercício 02
 
+No CMD:
 ```javascript
 cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongoimport --db Exercicio02 --collection Vocabulary --file "E:\Google Drive\02 Pós CDBD\04 NSQ - Bancos de dados Não Relacionais\01 Aulas\03 Aula 03\Vocabulary.json"
