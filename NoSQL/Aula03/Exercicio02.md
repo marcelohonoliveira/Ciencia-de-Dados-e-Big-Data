@@ -1,22 +1,19 @@
 ##Exercício 02
 Utilizando a função de agregação contar quantos itens cujo o campo total seja maior do que 1000, agrupando-os por tipo, (campo type) e exiba o resultado em ordem crescente.
+
+No Mongo:
 ```javascript
-var result_cursor = db.Vocabulary.aggregate([
-        { $match: { total: { $gt: 1000 } } },
-        {
-            $group: {
-                _id: { type: "$type" },
-                qty: { $sum: 1 }
-            }
-        },
-        { $sort: { "_id.type": 1 } }
-    ]);
+load("E:/Google Drive/02 Pós CDBD/04 NSQ - Bancos de dados Não Relacionais/01 Aulas/03 Aula 03/Exercicio02.js")
+```
 
-result_cursor.pretty();
-
-while (result_cursor.hasNext()) {
-    printjson(result_cursor.next());
-}
-
-result_cursor.close();
+>Saída:
+```javascript
+{ "_id" : { "type" : 1 }, "qty" : 1 }
+{ "_id" : { "type" : 3 }, "qty" : 2 }
+{ "_id" : { "type" : 4 }, "qty" : 12 }
+{ "_id" : { "type" : 5 }, "qty" : 744 }
+{ "_id" : { "type" : 6 }, "qty" : 2 }
+{ "_id" : { "type" : 8 }, "qty" : 6 }
+{ "_id" : { "type" : 9 }, "qty" : 5 }
+true
 ```
