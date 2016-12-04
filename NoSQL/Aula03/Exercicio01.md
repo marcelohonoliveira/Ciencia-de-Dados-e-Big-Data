@@ -6,6 +6,7 @@ Na coleção Vocabulary
 
 No Mongo:
 ```javascript
+use Exercicio02
 load("E:/Google Drive/02 Pós CDBD/04 NSQ - Bancos de dados Não Relacionais/01 Aulas/03 Aula 03/Exercicio01a.js")
 ```
 
