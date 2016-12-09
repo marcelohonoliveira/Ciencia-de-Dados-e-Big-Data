@@ -116,7 +116,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
         "ok" : 1
 }
 ```
-**Primeiro Tweet coletado (Retweet de @Glaysson):**
+####2.3.2 Primeiro Tweet coletado (Retweet de @Glaysson):
 
 ***[imagem]***
 
@@ -134,7 +134,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 }
 ```
 
-**Último tweet (Publicação de @thinkingespana):**
+####2.3.3 Último tweet (Publicação de @thinkingespana):
 
 ***[imagem]***
 
