@@ -48,7 +48,6 @@ db.Alunos.insertMany([
 }])
 ```
 >_Saída:_
-
 ```javascript
 {
         "acknowledged" : true,
