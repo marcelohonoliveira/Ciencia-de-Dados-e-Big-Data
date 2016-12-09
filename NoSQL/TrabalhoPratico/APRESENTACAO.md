@@ -118,7 +118,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 ```
 ####2.3.2 Primeiro tuíte coletado (Retweet de @Glaysson):
 
-<p align="center"><img src="Imagens/PrimeiroTweet.png" /></p>
+<img src="Imagens/PrimeiroTweet.png" />
 
 Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
@@ -136,7 +136,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
 ####2.3.3 Último tweet (Publicação de @thinkingespana):
 
-<p align="center"><img src="Imagens/UltimoTweet.png" /></p>
+<img src="Imagens/UltimoTweet.png" />
 
 Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 
