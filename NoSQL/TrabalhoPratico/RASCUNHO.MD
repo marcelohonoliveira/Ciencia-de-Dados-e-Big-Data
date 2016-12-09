@@ -35,7 +35,7 @@ A ferramenta consiste de um Programa Principal (classe Program) e uma classe que
 O programa é executado em Console Windows e ao ser iniciado, começa a capturar todos os tweets que no seu texto constasse as palavras definidas na etapa anterior, mostra na tela o texto e armazena em um banco de dados NoSQL não-relacional cada captura.
 Propositalmente, foi persistidos apenas a Data de Publicação, o Identificador, o Texto e o Idioma do Tweet - dados básicos para a análise proposta.
 
-**O código-fonte está disponível [aqui](Código Fonte).**
+> **O código-fonte está disponível [aqui](Código Fonte).**
 
 ***Classe Tweet:***
 ```c#
@@ -120,8 +120,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 
 ***[imagem]***
 
-Link do Twitter:
-* https://twitter.com/ChapecoenseReal/status/805002970559553536
+Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
 ***Documento do Tweet no MongoDB:***
 ```javascript
@@ -139,8 +138,7 @@ Link do Twitter:
 
 ***[imagem]***
 
-Link do Twitter:
-* https://twitter.com/thinkingespana/status/805849259891363840
+Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 
 ***Documento do Tweet no MongoDB:***
 ```javascript
@@ -193,7 +191,8 @@ A imagem abaixo exibe um exemplo fictício para demonstrar o seu funcionamento:
 Para essa análise primária, foram escritas as seguintes funções Map e Reduce:
 
 *map_fn:*
-1.Se o texto é indefinido, retorna;
+
+1. Se o texto é indefinido, retorna;
 2. Cria uma lista de palavras a partir do texto do Tweet:
  a. Mantém apenas consoantes e vogais (acentuadas ou não);
  b. Exclui caracteres de quebra de linha e tabulação;
@@ -204,6 +203,7 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
 
 
 *reduce_fn:*
+
 1. Recebe chave e valor;
 2. Retorna a palavra e sua frequência.
 
