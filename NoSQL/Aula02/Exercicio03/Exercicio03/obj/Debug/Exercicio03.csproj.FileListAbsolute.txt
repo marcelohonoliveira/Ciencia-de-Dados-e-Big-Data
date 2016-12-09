@@ -1,0 +1,12 @@
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\Exercicio03.exe.config
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\Exercicio03.exe
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\Exercicio03.pdb
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\MongoDB.Bson.dll
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\MongoDB.Driver.Core.dll
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\MongoDB.Driver.dll
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\MongoDB.Bson.xml
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\MongoDB.Driver.xml
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\bin\Debug\MongoDB.Driver.Core.xml
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\obj\Debug\Exercicio03.csprojResolveAssemblyReference.cache
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\obj\Debug\Exercicio03.exe
+E:\Projetos\Marcelo\Exercicio03\Exercicio03\obj\Debug\Exercicio03.pdb
