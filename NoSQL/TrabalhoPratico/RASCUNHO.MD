@@ -13,7 +13,12 @@ Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunida
 
 ###2.1 Estratégia de Coleta
 
-O trabalho consiste, então, na coleta de aproximadamente 1 milhão de post do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os temos: **forçachape**, **forcachape**, **chapecoense**. Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitas ruídos, não foram considerados.
+O trabalho consiste, então, na coleta de aproximadamente 1 milhão de post do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os temos:
+* **forçachape**
+* **forcachape**
+* **chapecoense**
+
+Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitas ruídos, não foram considerados.
 
 A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
 
@@ -86,13 +91,7 @@ Como já citado, os dados dos tweets foram devidamente armazenados em um banco d
 
 Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tweets coletados.
 
-**Um arquivo com todos os Tweets está disponível em JSON [aqui](arquivo JSON).**
-
-***Número total de documentos (Tweets):***
-```javascript
->db.Tweets.find().count()
-1078141
-```
+>**Um arquivo com todos os Tweets está disponível em JSON [aqui](arquivo JSON).**
 
 ***Estatísticas da coleção Tweets:***
 ```javascript
@@ -119,9 +118,10 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 ```
 **Primeiro Tweet coletado (Retweet de @Glaysson):**
 
-Link: https://twitter.com/ChapecoenseReal/status/805002970559553536
-
 ***[imagem]***
+
+Link do Twitter:
+* https://twitter.com/ChapecoenseReal/status/805002970559553536
 
 ***Documento do Tweet no MongoDB:***
 ```javascript
@@ -136,9 +136,11 @@ Link: https://twitter.com/ChapecoenseReal/status/805002970559553536
 ```
 
 **Último tweet (Publicação de @thinkingespana):**
-Link: https://twitter.com/thinkingespana/status/805849259891363840
 
 ***[imagem]***
+
+Link do Twitter:
+* https://twitter.com/thinkingespana/status/805849259891363840
 
 ***Documento do Tweet no MongoDB:***
 ```javascript
