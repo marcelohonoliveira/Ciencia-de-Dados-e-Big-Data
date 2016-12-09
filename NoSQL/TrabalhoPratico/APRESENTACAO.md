@@ -82,7 +82,7 @@ A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de
 
 A ferramenta cumpriu bem seu objetivo e coletou 1.078.141 tweets com apenas 3 interrupções de no máximo 10 minutos devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 0,0015% do total).
 
-<img src="Imagens/Screenshot_Execucao.png" align="center" width="100%" height="100%"/>
+<img src="Imagens/Screenshot_Execucao.png" align="center" />
 
 ###2.3 Os Dados Coletados
 
@@ -136,7 +136,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
 ####2.3.3 Último tweet (Publicação de @thinkingespana):
 
-<img src="Imagens/UltimoTweet.png" align="center" width="100%" height="100%"/>
+<img src="Imagens/UltimoTweet.png" align="center" />
 
 Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 
@@ -392,18 +392,19 @@ true
 
 ###3.2 Análise Secundária: tratamentos finos
 
+>**Um arquivo com todos os Termos está disponível em JSON [aqui](Arquivos/Terms.json).**
+
 **Tuítes por Dia**
 
-<img src="Imagens/TweetsDia.png" align="center" width="100%" height="100%"/>
+<img src="Imagens/TweetsDia.png" align="center" />
 
 **Tuítes por Hora**
 
-<img src="Imagens/TweetsHora.png" align="center" width="100%" height="100%"/>
+<img src="Imagens/TweetsHora.png" align="center" />
 
 ##4. Conclusão
 
-
-<img src="Imagens/WordCloud.png" align="center" width="100%" height="100%"/>
+<img src="Imagens/WordCloud.png" align="center" />
 
 ##5. Bibliografia
 
