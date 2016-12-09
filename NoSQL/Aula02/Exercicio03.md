@@ -9,4 +9,4 @@
 
 >Solução disponível [aqui](Exercicio03 "Aplicação C#") (Solução Visual Studio - Projeto em C#).
 
-[<img src="Exercicio02/Screenshot_Exercicio03.png" align="center" width="100%" height="100%"/>](Exercicio03)
+[<img src="Exercicio03/Screenshot_Exercicio03.png" align="center" width="100%" height="100%"/>](Exercicio03)
