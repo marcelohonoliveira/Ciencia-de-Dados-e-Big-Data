@@ -7,7 +7,7 @@ Para cada uma das situações dos exercícios escolha a infraestrutura que você
 Você e um grupo de amigos da faculdade decidem-se juntar e criar uma empresa de tecnologia na área de IoT. Todos seus amigos são excelentes programadores porém estão em dúvida como montar a infraestrutura para suportar a grande quantidade de dados gerados pelos sensores da aplicação.
 
 O que vocês devem fazer?
->**Resposta:** _Sugere-se que o primeiro passo é saber qual o problema que teremos que resolver. Ou seja, o que a aplicação e sua infraestrutura terá de missão. Como o assunto é IoT e é um assunto muito novo, teremos poucos recursos para benchmarking. Então, em alguns momentos, a tentativa e erro deverá ser considerada. De forma simplista, pode-se se prever uma grande quantidade de dados armazenada e com crescimento rápido. A arquitera deverá suportar a carga incial de armazenamento e processamento, mas deverá ser pensada para uma alta escalabilidade._
+>**Resposta:** _Sugere-se que o primeiro passo é saber qual o problema que teremos que resolver. Ou seja, o que a aplicação e sua infraestrutura terá de missão. Como o assunto é IoT e é um assunto muito novo, teremos poucos recursos para benchmarking. Então, em alguns momentos, a tentativa e erro deverá ser considerada. De forma simplista, pode-se se prever uma grande quantidade de dados armazenada e com crescimento rápido. A arquitetura deverá suportar a carga inicial de armazenamento e processamento, mas deverá ser pensada para uma alta escalabilidade._
 
 
 
