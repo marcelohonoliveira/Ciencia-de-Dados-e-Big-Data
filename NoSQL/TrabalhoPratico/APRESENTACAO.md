@@ -33,7 +33,7 @@ Para a conexão com o banco de dados inclui-se na aplicação o driver [MongoDB 
 A ferramenta consiste de um Programa Principal (classe Program) e uma classe que representasse a entidade Tweet.
 
 O programa é executado em Console Windows e ao ser iniciado, começa a capturar todos os tweets que no seu texto constasse as palavras definidas na etapa anterior, mostra na tela o texto e armazena em um banco de dados NoSQL não-relacional cada captura.
-Propositalmente, foi persistidos apenas a Data de Publicação, o Identificador, o Texto e o Idioma do Tweet - dados básicos para a análise proposta.
+Propositalmente, foram persistidos apenas a ***Data de Publicação***, o ***Identificador***, o ***Texto*** e o ***Idioma*** do tuíte - dados básicos para a análise proposta.
 
 > **O código-fonte está disponível [aqui](TwitterListenerPlus).**
 
@@ -89,9 +89,9 @@ A ferramenta cumpriu bem seu objetivo e coletou 1.078.141 tweets com apenas 3 in
 ####2.3.1 O Armazenamento dos Dados
 Como já citado, os dados dos tweets foram devidamente armazenados em um banco de dados NoSQL MongoDB.
 
-Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tweets coletados.
+Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tuítes coletados.
 
->**Um arquivo com todos os Tweets está disponível em JSON [aqui](Arquivos/Tweets.json).**
+>**Um arquivo com todos os tuítes está disponível em JSON [aqui](Arquivos/Tweets.json).**
 
 ***Estatísticas da coleção Tweets:***
 ```javascript
@@ -116,13 +116,13 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
         "ok" : 1
 }
 ```
-####2.3.2 Primeiro Tweet coletado (Retweet de @Glaysson):
+####2.3.2 Primeiro tuíte coletado (Retweet de @Glaysson):
 
 <img src="Imagens/PrimeiroTweet.png" align="center" />
 
 Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
-***Documento do Tweet no MongoDB:***
+***Documento do Tuíte no MongoDB:***
 ```javascript
 > db.Tweets.find().sort({created_at : 1}).limit(1).pretty()
 {
@@ -140,7 +140,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
 Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 
-***Documento do Tweet no MongoDB:***
+***Documento do Tuíte no MongoDB:***
 ```javascript
 > db.Tweets.find().sort({created_at : -1}).limit(-1).pretty()
 {
@@ -170,7 +170,7 @@ cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongod --dbpath="C:/Program Files/MongoDB/Data"
 ```
 
-####3.1.2 Exportar os Tweets em arquivo JSON (apenas backup)
+####3.1.2 Exportar os Tuítes em arquivo JSON (apenas backup)
 
 ***No Terminal Windows (CMD):***
 ```
@@ -193,7 +193,7 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
 **map_fn:**
 
 1. Se o texto é indefinido, retorna;
-2. Cria uma lista de palavras a partir do texto do Tweet:
+2. Cria uma lista de palavras a partir do texto do Tuíte:
  a. Mantém apenas consoantes e vogais (acentuadas ou não);
  b. Exclui caracteres de quebra de linha e tabulação;
  c. Exclui espaços repetidos;
@@ -261,7 +261,7 @@ while (cursor_freq_terms.hasNext())
 cursor_freq_terms.close();
 ```
 
-***Código para exibição do Volume de Tweets por Dia***
+***Código para exibição do Volume de Tuítes por Dia***
 ```javascript
 var cursor_tweets_day = db.Tweets.aggregate({ $group: { _id: { $dateToString: { format: "%Y-%m-%d", date: "$created_at" } }, total: { $sum: 1 } } }
 					   , { $sort: { _id: 1 } });
@@ -274,7 +274,7 @@ while (cursor_tweets_day.hasNext())
 cursor_tweets_day.close();
 ```
 
-***Código para exibição do Volume de Tweets por Hora***
+***Código para exibição do Volume de Tuítes por Hora***
 ```javascript
 var cursor_tweets_hour = db.Tweets.aggregate({ $group: { _id: { $dateToString: { format: "%Y-%m-%d %H:00", date: "$created_at" } }, total: { $sum: 1 } } }
 					    , { $sort: { _id: 1 } });
@@ -287,7 +287,7 @@ while (cursor_tweets_hour.hasNext())
 cursor_tweets_hour.close();
 ```
 
-***No Terminal Windows (CMD), carregamento e execução do arquivo JS com os códigos acima.***
+***No Terminal Windows (CMD), carregamento e execução do arquivo *.JS* com os códigos acima.***
 ```javascript
 cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongo
@@ -324,7 +324,7 @@ load("mapReduce.js")
 
 
 ---------------------------------------------------------------------
-                       Volume de Tweets por Dia
+                       Volume de Tuítes por Dia
 ---------------------------------------------------------------------
 { "_id" : "2016-12-03", "total" : 472703 }
 { "_id" : "2016-12-04", "total" : 353588 }
@@ -332,7 +332,7 @@ load("mapReduce.js")
 
 
 ---------------------------------------------------------------------
-                       Volume de Tweets por Hora
+                       Volume de Tuítes por Hora
 ---------------------------------------------------------------------
 { "_id" : "2016-12-03 14:00", "total" : 49566 }
 { "_id" : "2016-12-03 15:00", "total" : 121715 }
@@ -408,19 +408,19 @@ true
 
 ##5. Bibliografia
 
-1. **Título.** Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html Acesso em 09 de dez. de 2016.
+1. **Listas de stopwords - stoplist (portugues, ingles, espanhol).** Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html Acesso em 09 de dez. de 2016.
 
-2. **Título.** Disponível em https://tagul.com/create Acesso em 09 de dez. de 2016.
+2. **Ferramenta Word Tagul Clouds.** Disponível em https://tagul.com/create Acesso em 09 de dez. de 2016.
 
-3. **Título.** Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends Acesso em 09 de dez. de 2016.
+3. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure.** Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends Acesso em 09 de dez. de 2016.
 
-4. **Título.** Disponível em https://dev.twitter.com/overview/api Acesso em 09 de dez. de 2016.
+4. **Twitter Developer Documentation - API Overview.** Disponível em https://dev.twitter.com/overview/api Acesso em 09 de dez. de 2016.
 
-5. **Título.** Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx Acesso em 09 de dez. de 2016.
+5. **Utilizando a API do Twitter no desenvolvimento de aplicações web com PHP e cURL.** Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx Acesso em 09 de dez. de 2016.
 
-6. **Título.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ Acesso em 09 de dez. de 2016.
+6. **MongoDB Manual - Map-Reduce.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ Acesso em 09 de dez. de 2016.
 
-7. **Título.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ Acesso em 09 de dez. de 2016.
+7. **Brincando com dados: Ganhadores do Oscar.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ Acesso em 09 de dez. de 2016.
 
 
 
