@@ -4,7 +4,7 @@
 ##1. Motivação
 
 
-Conforme solicitado pelo professor, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como a maior tragédia do esporte (http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que matou a delegação da Chapecoense que seguia para Medellín, na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
+Conforme solicitado pelo professor, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que matou a delegação da Chapecoense que seguia para Medellín, na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
 
 
 Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas redes sociais.
@@ -34,7 +34,7 @@ A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vít
 
 Foi desenvolvida uma aplicação para escuta do Tweeter batizada de “Twitter Listener Plus”.
 Codificada em linguagem C# com o framework Microsoft .Net versão 4.5.2 e banco de dados MongoDB. A IDE (do inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado) utilizada foi o Microsoft Visual Studio 14.
-Para a conexão com o banco de dados inclui-se na aplicação o driver MongoDB Driver versão 2.3.0 (https://www.nuget.org/packages/MongoDB.Driver/2.3.0) e para leitura do Twitter foi adicionada à aplicação a biblioteca Tweetinvi versão 1.1.1 (https://www.nuget.org/packages/TweetinviAPI).
+Para a conexão com o banco de dados inclui-se na aplicação o driver [MongoDB Driver versão 2.3.0](https://www.nuget.org/packages/MongoDB.Driver/2.3.0) e para leitura do Twitter foi adicionada à aplicação a biblioteca [Tweetinvi versão 1.1.1](https://www.nuget.org/packages/TweetinviAPI).
 
 A ferramenta consiste de um Programa Principal (classe Program) e uma classe que representasse a entidade Tweet.
 
@@ -97,7 +97,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 
 **Um arquivo com todos os Tweets está disponível em JSON [aqui](arquivo JSON).**
 
-**Número total de documentos (Tweets):***
+***Número total de documentos (Tweets):***
 ```javascript
 >db.Tweets.find().count()
 1078141
