@@ -20,10 +20,10 @@ Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunida
 ###2.1 Estratégia de Coleta
 
 
-O trabalho consiste, então, na coleta de aproximadamente 1 milhão de post do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os temos: *forçachape*, *forcachape*, *chapecoense*. Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitas ruídos, não foram considerados.
+O trabalho consiste, então, na coleta de aproximadamente 1 milhão de post do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os temos: **forçachape**, **forcachape**, **chapecoense**. Outros termos foram levantados: **acidente**, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitas ruídos, não foram considerados.
 
 
-A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às *12h38 do dia 03/12/16* - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às *17h00 do dia 05/12/16*.
+A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
 
 
 ###2.2 Ferramenta de Captura
