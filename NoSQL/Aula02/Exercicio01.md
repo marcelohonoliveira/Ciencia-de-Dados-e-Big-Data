@@ -64,7 +64,6 @@ db.Alunos.insertMany([
 db.Alunos.find().sort({data_nascimento: 1}).limit(1)
 ```
 >_Saída:_
-
 ```javascript
 {
         "_id" : ObjectId("58386f7e9a48a513ac16e796"),
@@ -87,7 +86,6 @@ db.Alunos.update( {"nome_aluno": "Aluno 01"}, {$set: {"NSQ_nota" : 5}})
 ```
 
 >_Saída:_
-
 ```javascript
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 ```
@@ -102,7 +100,6 @@ try {
 ```
 
 >_Saída:_
-
 ```javascript
 { "acknowledged" : true, "deletedCount" : 1 }
 ```
