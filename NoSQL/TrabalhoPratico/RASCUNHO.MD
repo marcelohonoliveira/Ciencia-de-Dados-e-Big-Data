@@ -8,7 +8,7 @@ Conforme solicitado pelo professor, o trabalho deveria consistir na coleta e an�
 
 
 Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas redes sociais.
-De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag #ForçaChape se tornou a mais usada no Twitter em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
+De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no Twitter em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
 
 
 Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunidade para uma coleta de posts em tempo real com um tema bem específico e com grande volume de publicações em pouco tempo. Não restou dúvida: o assunto deveria ser, de fato, o acidente com o avião da equipe da Chapecoense e diversos jornalistas esportivos que aconteceu na madrugada do dia 29 de novembro de 2016 próximo a Medellín, na Colômbia.
@@ -20,7 +20,7 @@ Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunida
 ###2.1 Estratégia de Coleta
 
 
-O trabalho consiste, então, na coleta de aproximadamente 1 milhão de post do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os temos: **forçachape**, **forcachape**, **chapecoense**. Outros termos foram levantados: **acidente**, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitas ruídos, não foram considerados.
+O trabalho consiste, então, na coleta de aproximadamente 1 milhão de post do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os temos: **forçachape**, **forcachape**, **chapecoense**. Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitas ruídos, não foram considerados.
 
 
 A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
@@ -36,16 +36,12 @@ Foi desenvolvida uma aplicação para escuta do Tweeter batizada de “Twitter L
 Codificada em linguagem C# com o framework Microsoft .Net versão 4.5.2 e banco de dados MongoDB. A IDE (do inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado) utilizada foi o Microsoft Visual Studio 14.
 Para a conexão com o banco de dados inclui-se na aplicação o driver MongoDB Driver versão 2.3.0 (https://www.nuget.org/packages/MongoDB.Driver/2.3.0) e para leitura do Twitter foi adicionada à aplicação a biblioteca Tweetinvi versão 1.1.1 (https://www.nuget.org/packages/TweetinviAPI).
 
-
 A ferramenta consiste de um Programa Principal (classe Program) e uma classe que representasse a entidade Tweet.
-
 
 O programa é executado em Console Windows e ao ser iniciado, começa a capturar todos os tweets que no seu texto constasse as palavras definidas na etapa anterior, mostra na tela o texto e armazena em um banco de dados NoSQL não-relacional cada captura.
 Propositalmente, foi persistidos apenas a Data de Publicação, o Identificador, o Texto e o Idioma do Tweet - dados básicos para a análise proposta.
 
-
 **O código-fonte está disponível [aqui](Código Fonte).**
-
 
 ***Classe Tweet:***
 ```c#
@@ -257,8 +253,6 @@ var result = db.Tweets.mapReduce(
                             query: {},
                             out: "Terms"
                         });
-
-
 ```
 
 ***Código para exibição da Lista dos 20 Termos mais frequentes - SEM TRATAMENTO FINO***
