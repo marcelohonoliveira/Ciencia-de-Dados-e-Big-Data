@@ -30,6 +30,5 @@ informando o tipo da palavra.
 
 >Solução disponível [aqui](Exercicio02 "Aplicação C#") (Solução Visual Studio - Projeto em C#).
 
-
-[<img src="Exercicio02/Screenshot_Exercicio02.png" align="right" width="100%" height="100%"/>](Exercicio02)
+[<img src="Exercicio02/Screenshot_Exercicio02.png" align="center" width="100%" height="100%"/>](Exercicio02)
 
