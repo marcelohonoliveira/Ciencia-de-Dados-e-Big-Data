@@ -186,7 +186,7 @@ O MongoDB disponibiliza uma função nativa de MapReduce.
 
 A imagem abaixo exibe um exemplo fictício para demonstrar o seu funcionamento:
 
-[imagem MapReduce]
+***[imagem]***
 
 Para essa análise primária, foram escritas as seguintes funções Map e Reduce:
 
