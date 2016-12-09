@@ -1,36 +1,25 @@
 #Análise de mídia social: termos mais frequentes no Twitter em tempo real acerca da tragédia com a Chapecoense
 
-
 ##1. Motivação
 
-
 Conforme solicitado pelo professor, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que matou a delegação da Chapecoense que seguia para Medellín, na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
-
 
 Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas redes sociais.
 De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no Twitter em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
 
-
 Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunidade para uma coleta de posts em tempo real com um tema bem específico e com grande volume de publicações em pouco tempo. Não restou dúvida: o assunto deveria ser, de fato, o acidente com o avião da equipe da Chapecoense e diversos jornalistas esportivos que aconteceu na madrugada do dia 29 de novembro de 2016 próximo a Medellín, na Colômbia.
-
 
 ##2. Desenvolvimento
 
-
 ###2.1 Estratégia de Coleta
-
 
 O trabalho consiste, então, na coleta de aproximadamente 1 milhão de post do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os temos: **forçachape**, **forcachape**, **chapecoense**. Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitas ruídos, não foram considerados.
 
-
 A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
-
 
 ###2.2 Ferramenta de Captura
 
-
 ####2.2.1 O Twitter Listener Plus
-
 
 Foi desenvolvida uma aplicação para escuta do Tweeter batizada de “Twitter Listener Plus”.
 Codificada em linguagem C# com o framework Microsoft .Net versão 4.5.2 e banco de dados MongoDB. A IDE (do inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado) utilizada foi o Microsoft Visual Studio 14.
@@ -129,7 +118,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 **Primeiro Tweet coletado (Retweet de @Glaysson):**
 Link: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
-[imagem]
+<span style="color:red">**[imagem]**<\span>
 
 ***Documento do Tweet no MongoDB:***
 ```javascript
