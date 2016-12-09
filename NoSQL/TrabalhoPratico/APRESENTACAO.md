@@ -299,6 +299,22 @@ load("mapReduce.js")
 ***Saída:***
 ```javascript
 ---------------------------------------------------------------------
+                      Resultado do MapReduce
+---------------------------------------------------------------------
+{
+        "result" : "Terms",
+        "timeMillis" : 381572,
+        "counts" : {
+                "input" : 1078141,
+                "emit" : 15154957,
+                "reduce" : 1552369,
+                "output" : 277616
+        },
+        "ok" : 1
+}
+
+
+---------------------------------------------------------------------
      Lista dos 20 Termos mais frequentes - SEM TRATAMENTO
 ---------------------------------------------------------------------
 { "_id" : "RT", "value" : 858866 }
@@ -324,7 +340,7 @@ load("mapReduce.js")
 
 
 ---------------------------------------------------------------------
-                       Volume de Tuítes por Dia
+                     Volume de Tweets por Dia
 ---------------------------------------------------------------------
 { "_id" : "2016-12-03", "total" : 472703 }
 { "_id" : "2016-12-04", "total" : 353588 }
@@ -332,7 +348,7 @@ load("mapReduce.js")
 
 
 ---------------------------------------------------------------------
-                       Volume de Tuítes por Hora
+                     Volume de Tweets por Hora
 ---------------------------------------------------------------------
 { "_id" : "2016-12-03 14:00", "total" : 49566 }
 { "_id" : "2016-12-03 15:00", "total" : 121715 }
@@ -392,6 +408,8 @@ true
 
 ###3.2 Análise Secundária: tratamentos finos
 
+Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos encontrados nos dados totais (~1M de tuítes). Isso gerou 
+
 >**Um arquivo com todos os Termos está disponível em JSON [aqui](Arquivos/Terms.json).**
 
 **Tuítes por Dia**
@@ -408,19 +426,19 @@ true
 
 ##5. Bibliografia
 
-1. **Listas de stopwords - stoplist (portugues, ingles, espanhol).** Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html Acesso em 09 de dez. de 2016.
+1. **Listas de stopwords - stoplist (portugues, ingles, espanhol).** Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html - Acesso em 09 de dez. de 2016.
 
-2. **Ferramenta Word Tagul Clouds.** Disponível em https://tagul.com/create Acesso em 09 de dez. de 2016.
+2. **Ferramenta Word Tagul Clouds.** Disponível em https://tagul.com/create - Acesso em 09 de dez. de 2016.
 
-3. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure.** Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends Acesso em 09 de dez. de 2016.
+3. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure.** Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
 
-4. **Twitter Developer Documentation - API Overview.** Disponível em https://dev.twitter.com/overview/api Acesso em 09 de dez. de 2016.
+4. **Twitter Developer Documentation - API Overview.** Disponível em https://dev.twitter.com/overview/api - Acesso em 09 de dez. de 2016.
 
-5. **Utilizando a API do Twitter no desenvolvimento de aplicações web com PHP e cURL.** Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx Acesso em 09 de dez. de 2016.
+5. **Utilizando a API do Twitter no desenvolvimento de aplicações web com PHP e cURL.** Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx - Acesso em 09 de dez. de 2016.
 
-6. **MongoDB Manual - Map-Reduce.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ Acesso em 09 de dez. de 2016.
+6. **MongoDB Manual - Map-Reduce.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ - Acesso em 09 de dez. de 2016.
 
-7. **Brincando com dados: Ganhadores do Oscar.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ Acesso em 09 de dez. de 2016.
+7. **Brincando com dados: Ganhadores do Oscar.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ - Acesso em 09 de dez. de 2016.
 
 
 
