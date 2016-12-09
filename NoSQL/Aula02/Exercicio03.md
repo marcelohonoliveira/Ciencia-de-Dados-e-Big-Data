@@ -8,8 +8,7 @@
 * Adicione esse arquivo em seu github em uma pasta chamada aula2
 
 >Solução disponível [aqui](Exercicio03 "Aplicação C#") (Solução Visual Studio - Projeto em C#).
-
-_Dados armazenados pela aplicação:_
+>_Dados armazenados pela aplicação:_
 ```javascript
 > use Exercicio03
 > db.Alunos.find().pretty()
