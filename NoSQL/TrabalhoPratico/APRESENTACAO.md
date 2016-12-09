@@ -35,7 +35,7 @@ A ferramenta consiste de um Programa Principal (classe Program) e uma classe que
 O programa é executado em Console Windows e ao ser iniciado, começa a capturar todos os tweets que no seu texto constasse as palavras definidas na etapa anterior, mostra na tela o texto e armazena em um banco de dados NoSQL não-relacional cada captura.
 Propositalmente, foi persistidos apenas a Data de Publicação, o Identificador, o Texto e o Idioma do Tweet - dados básicos para a análise proposta.
 
-> **O código-fonte está disponível [aqui](TrabalhoPratico/TwitterListenerPlus).**
+> **O código-fonte está disponível [aqui](TwitterListenerPlus).**
 
 ***Classe Tweet:***
 ```c#
