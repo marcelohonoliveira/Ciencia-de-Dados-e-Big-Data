@@ -118,7 +118,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 ```
 ####2.3.2 Primeiro Tweet coletado (Retweet de @Glaysson):
 
-<img src="Imagens/PrimeiroTweet.png" align="center" width="100%" height="100%"/>
+<img src="Imagens/PrimeiroTweet.png" align="center" />
 
 Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
