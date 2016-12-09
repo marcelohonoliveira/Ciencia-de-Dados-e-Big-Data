@@ -1,4 +1,4 @@
-﻿#Análise de Mídia Social: termos mais frequentes no Twitter acerca da tragédia com a Chapecoense
+#Análise de Mídia Social: termos mais frequentes no Twitter acerca da tragédia com a Chapecoense
 
 ##1. Motivação
 
@@ -35,7 +35,7 @@ A ferramenta consiste de um Programa Principal (classe Program) e uma classe que
 O programa é executado em Console Windows e ao ser iniciado, começa a capturar todos os tweets que no seu texto constasse as palavras definidas na etapa anterior, mostra na tela o texto e armazena em um banco de dados NoSQL não-relacional cada captura.
 Propositalmente, foi persistidos apenas a Data de Publicação, o Identificador, o Texto e o Idioma do Tweet - dados básicos para a análise proposta.
 
-> **O código-fonte está disponível [aqui](Código Fonte).**
+> **O código-fonte está disponível [aqui](TrabalhoPratico/TwitterListenerPlus).**
 
 ***Classe Tweet:***
 ```c#
@@ -91,7 +91,7 @@ Como já citado, os dados dos tweets foram devidamente armazenados em um banco d
 
 Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tweets coletados.
 
->**Um arquivo com todos os Tweets está disponível em JSON [aqui](Arquivos).**
+>**Um arquivo com todos os Tweets está disponível em JSON [aqui](Arquivos/Tweets.json).**
 
 ***Estatísticas da coleção Tweets:***
 ```javascript
@@ -118,7 +118,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 ```
 ####2.3.2 Primeiro Tweet coletado (Retweet de @Glaysson):
 
-***[imagem]***
+<img src="Imagens/PrimeiroTweet.png" align="center" width="100%" height="100%"/>
 
 Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
@@ -136,7 +136,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
 ####2.3.3 Último tweet (Publicação de @thinkingespana):
 
-***[imagem]***
+<img src="Imagens/UltimoTweet.png" align="center" width="100%" height="100%"/>
 
 Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 
@@ -186,11 +186,11 @@ O MongoDB disponibiliza uma função nativa de MapReduce.
 
 A imagem abaixo exibe um exemplo fictício para demonstrar o seu funcionamento:
 
-***[imagem]***
+<img src="Imagens/MapReduce.png" align="center" width="100%" height="100%"/>
 
 Para essa análise primária, foram escritas as seguintes funções Map e Reduce:
 
-*map_fn:*
+**map_fn:**
 
 1. Se o texto é indefinido, retorna;
 2. Cria uma lista de palavras a partir do texto do Tweet:
@@ -202,7 +202,7 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
 3. Para cada palavra, criação um registro novo.
 
 
-*reduce_fn:*
+**reduce_fn:**
 
 1. Recebe chave e valor;
 2. Retorna a palavra e sua frequência.
@@ -392,6 +392,37 @@ true
 
 ###3.2 Análise Secundária: tratamentos finos
 
+**Tuítes por Dia**
+
+<img src="Imagens/TweetsDia.png" align="center" width="100%" height="100%"/>
+
+**Tuítes por Hora**
+
+<img src="Imagens/TweetsHora.png" align="center" width="100%" height="100%"/>
+
 ##4. Conclusão
 
+
+<img src="Imagens/WordCloud.png" align="center" width="100%" height="100%"/>
+
 ##5. Bibliografia
+
+1. **Título.** Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html Acesso em 09 de dez. de 2016.
+
+2. **Título.** Disponível em https://tagul.com/create Acesso em 09 de dez. de 2016.
+
+3. **Título.** Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends Acesso em 09 de dez. de 2016.
+
+4. **Título.** Disponível em https://dev.twitter.com/overview/api Acesso em 09 de dez. de 2016.
+
+5. **Título.** Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx Acesso em 09 de dez. de 2016.
+
+6. **Título.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ Acesso em 09 de dez. de 2016.
+
+7. **Título.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ Acesso em 09 de dez. de 2016.
+
+
+
+
+
+
