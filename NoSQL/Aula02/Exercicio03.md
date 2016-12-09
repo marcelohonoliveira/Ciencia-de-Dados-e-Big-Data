@@ -13,12 +13,6 @@ use Exercicio03
 * Adicionar notas de um aluno a uma determinada disciplina
 * Adicione esse arquivo em seu github em uma pasta chamada aula2
 
-```python
-CODE
-```
+>Solução disponível [aqui](Exercicio03 "Aplicação C#") (Solução Visual Studio - Projeto em C#).
 
->_Saída:_
-
-```
-RESULT
-```
+[<img src="Exercicio02/Screenshot_Exercicio03.png" align="center" width="100%" height="100%"/>](Exercicio03)
