@@ -134,7 +134,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 }
 ```
 
-####2.3.3 Último tweet (Publicação de @thinkingespana):
+####2.3.3 Último tuíte (Publicação de @thinkingespana):
 
 <img src="Imagens/UltimoTweet.png" />
 
