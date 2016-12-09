@@ -82,7 +82,7 @@ A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de
 
 A ferramenta cumpriu bem seu objetivo e coletou 1.078.141 tweets com apenas 3 interrupções de no máximo 10 minutos devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 0,0015% do total).
 
-<img src="Imagens/Screenshot_Execucao.png" align="center" />
+<p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
 
 ###2.3 Os Dados Coletados
 
@@ -118,7 +118,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 ```
 ####2.3.2 Primeiro tuíte coletado (Retweet de @Glaysson):
 
-<img src="Imagens/PrimeiroTweet.png" align="center" />
+<p align="center"><img src="Imagens/PrimeiroTweet.png" /></p>
 
 Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
@@ -136,7 +136,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
 ####2.3.3 Último tweet (Publicação de @thinkingespana):
 
-<img src="Imagens/UltimoTweet.png" align="center" />
+<p align="center"><img src="Imagens/UltimoTweet.png" /></p>
 
 Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 
@@ -186,7 +186,7 @@ O MongoDB disponibiliza uma função nativa de MapReduce.
 
 A imagem abaixo exibe um exemplo fictício para demonstrar o seu funcionamento:
 
-<img src="Imagens/MapReduce.png" align="center" />
+<p align="center"><img src="Imagens/MapReduce.png" /></p>
 
 Para essa análise primária, foram escritas as seguintes funções Map e Reduce:
 
@@ -396,15 +396,15 @@ true
 
 **Tuítes por Dia**
 
-<img src="Imagens/TweetsDia.png" align="center" />
+<p align="center"><img src="Imagens/TweetsDia.png" /></p>
 
 **Tuítes por Hora**
 
-<img src="Imagens/TweetsHora.png" align="center" />
+<p align="center"><img src="Imagens/TweetsHora.png" /></p>
 
 ##4. Conclusão
 
-<img src="Imagens/WordCloud.png" align="center" />
+<p align="center"><img src="Imagens/WordCloud.png" /></p>
 
 ##5. Bibliografia
 
