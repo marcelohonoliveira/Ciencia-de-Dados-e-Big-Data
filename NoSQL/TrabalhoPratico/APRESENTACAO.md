@@ -194,11 +194,11 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
 
 1. Se o texto é indefinido, retorna;
 2. Cria uma lista de palavras a partir do texto do Tuíte:
- a. Mantém apenas consoantes e vogais (acentuadas ou não);
- b. Exclui caracteres de quebra de linha e tabulação;
- c. Exclui espaços repetidos;
- d. Exclui a acentuação e cedilha;
- e. Torna texto em letras maiúsculas
+	a. Mantém apenas consoantes e vogais (acentuadas ou não);
+	b. Exclui caracteres de quebra de linha e tabulação;
+	c. Exclui espaços repetidos;
+	d. Exclui a acentuação e cedilha;
+	e. Torna texto em letras maiúsculas
 3. Para cada palavra, criação um registro novo.
 
 
