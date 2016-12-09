@@ -77,6 +77,8 @@ A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de
 
 A ferramenta cumpriu bem seu objetivo e coletou 1.078.141 tweets com apenas 3 interrupções de no máximo 10 minutos devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 0,0015% do total).
 
+***[imagem]***
+
 ###2.3 Os Dados Coletados
 
 ####2.3.1 O Armazenamento dos Dados
@@ -116,9 +118,10 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 }
 ```
 **Primeiro Tweet coletado (Retweet de @Glaysson):**
+
 Link: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
-<span style="color:red">**[imagem]**<\span>
+***[imagem]***
 
 ***Documento do Tweet no MongoDB:***
 ```javascript
@@ -135,7 +138,7 @@ Link: https://twitter.com/ChapecoenseReal/status/805002970559553536
 **Último tweet (Publicação de @thinkingespana):**
 Link: https://twitter.com/thinkingespana/status/805849259891363840
 
-[imagem]
+***[imagem]***
 
 ***Documento do Tweet no MongoDB:***
 ```javascript
