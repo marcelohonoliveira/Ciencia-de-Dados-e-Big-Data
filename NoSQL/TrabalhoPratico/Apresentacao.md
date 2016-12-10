@@ -28,7 +28,7 @@ O trabalho consiste, então, na coleta de, aproximadamente, 1 milhão de posts d
 Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitos ruídos, não foram considerados.
 
 A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
-
+<br />
 ###2.2 Ferramenta de Captura
 
 ####2.2.1 O Twitter Listener Plus
@@ -39,6 +39,7 @@ Para a conexão com o banco de dados, inclui-se na aplicação o driver [MongoDB
 A ferramenta consiste de um Programa Principal - classe "Program" - e uma classe que representasse a entidade Tuíte - "Tweet".
 
 O programa é executado em Console Windows e ao ser iniciado:
+
 1. Começa a capturar todos os tuítes que, em seu texto, constasse as palavras definidas na etapa anterior;
 2. Mostra na tela o texto do tuíte;
 3. Armazena em um banco de dados NoSQL não-relacional cada captura.
@@ -94,7 +95,7 @@ A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas
 
 >**Screenshot da Execução em modo de Depuração:**
 <p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
-
+<br />
 ###2.3 Os Dados Coletados
 
 ####2.3.1 O Armazenamento dos Dados
@@ -170,11 +171,11 @@ A análise foi divida em duas etapas a saber:
 
 * A primeira com o objetivo de reduzir a quantidade grande de dados a um volume trabalhável e verificar a frequência por dia e por hora.
 * E a segunda objetivando ir a um nível de maior detalhamento, tratamentos finos e preparação da apresentação dos resultados.
-
+<br />
 ###3.1 Análise Primária: Tratamentos Iniciais
 
 ####3.1.1 Iniciar o serviço para o Mongo DB
-
+<br />
 ***No Terminal Windows (CMD):***
 ```
 mkdir "C:\Program Files\MongoDB\Data\"
@@ -183,7 +184,7 @@ mongod --dbpath="C:/Program Files/MongoDB/Data"
 ```
 
 ####3.1.2 Exportar os Tuítes em arquivo JSON (apenas backup)
-
+<br />
 ***No Terminal Windows (CMD):***
 ```
 cd “C:\Program Files\MongoDB\Server\3.2\bin”
@@ -217,7 +218,7 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
 
 1. Recebe chave e valor;
 2. Retorna a palavra e sua frequência.
-
+<br />
 ***Implementação das Funções Map e Reduce:***
 ```javascript
 var map_fn = function ()
@@ -241,7 +242,7 @@ var reduce_fn = function (key, value)
     return Array.sum(value);
 };
 ```
-
+<br />
 ####3.1.4 Execução do MapReduce
 
 ***Chamada da função MapReduce para a coleção “Tweets”:***
@@ -268,7 +269,7 @@ while (cursor_freq_terms.hasNext())
 
 cursor_freq_terms.close();
 ```
-
+<br />
 ***Código para exibição do Volume de Tuítes por Dia***
 ```javascript
 var cursor_tweets_day = db.Tweets.aggregate({ $group: { _id: { $dateToString: { format: "%Y-%m-%d", date: "$created_at" } }, total: { $sum: 1 } } }
@@ -281,7 +282,7 @@ while (cursor_tweets_day.hasNext())
 
 cursor_tweets_day.close();
 ```
-
+<br />
 ***Código para exibição do Volume de Tuítes por Hora***
 ```javascript
 var cursor_tweets_hour = db.Tweets.aggregate({ $group: { _id: { $dateToString: { format: "%Y-%m-%d %H:00", date: "$created_at" } }, total: { $sum: 1 } } }
@@ -294,7 +295,7 @@ while (cursor_tweets_hour.hasNext())
 
 cursor_tweets_hour.close();
 ```
-
+<br />
 ***No Terminal Windows (CMD), carregamento e execução do arquivo *.js* (Java Script) com os códigos acima.***
 ```javascript
 cd "C:\Program Files\MongoDB\Server\3.2\bin"
@@ -413,13 +414,13 @@ load("mapReduce.js")
 { "_id" : "2016-12-05 19:00", "total" : 144 }
 true
 ```
-
+<br />
 ###3.2 Análise Secundária: Tratamentos Finos
 
 Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos - **277.616 documentos** - encontrados nos dados totais (~1M de tuítes). Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
 
 >**Um arquivo com amostra dos Termos está disponível em JSON [aqui](Arquivos/Terms-Limit100.json).**
-
+<br />
 ####3.2.1 Stop Words
 
 Essa segunda parte da análise consiste na remoção das palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
@@ -436,10 +437,12 @@ Foram desconsideradas, também, as seguintes ocorrências:
 | HTTPS             | 26981      | Link quebrado         |
 
 A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 2016](https://products.office.com/pt-br/excel), onde foram filtradas apenas as palavra com significado e gerados os gráficos finais:
+
 * Top 20 dos Termos mais Frequentes
 * Quantidade de Tuítes por Dia
 * Quantidade de Tuítes por Hora
 
+<br />
 ####3.2.2 Gráficos
 
 Um gráfico é uma representação dos dados na forma de figuras geométricas - diagramas, desenhos, ou imagens - que permite ao leitor uma interpretação rápida e objetiva sobre o dados. 
@@ -468,7 +471,7 @@ Para auxiliar na visualização destes resultados, segue a Word Cloud que repres
 <p align="center"><img src="Imagens/WordCloudConclusao.png" /></p>
 
 Para o autor deste trabalho, a experiência obtida foi enriquecedora para seu currículo acadêmico e profissional. Seus objetivos de aprendizagem foram alcançados, pois o desenvolvimento do trabalho permitiu o estudo de novas ferramentas e a prática de conceitos aprendidos durante a disciplina de Bancos de Dados Não Relacionais do curso de Ciência de Dados e Big Data.
-
+<br />
 ##5. Bibliografia
 
 1. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure**. Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
