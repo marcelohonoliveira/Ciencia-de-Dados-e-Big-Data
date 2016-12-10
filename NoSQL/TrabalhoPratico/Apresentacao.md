@@ -429,17 +429,17 @@ Foram desconsiderados, também, as seguintes ocorrências:
 
 ####3.2.2 Gráficos
 
-<p align="center">**Top 20 dos Termos mais Frequentes**
+**Top 20 dos Termos mais Frequentes**
 
-<img src="Imagens/Top20TermosFrequentes.png" /></p>
+<img src="Imagens/Top20TermosFrequentes.png" />
 
-<p align="center">**Tuítes por Dia**
+**Quantidade de Tuítes por Dia**
 
-<img src="Imagens/TweetsDia.png" /></p>
+<img src="Imagens/TweetsDia.png" />
 
-<p align="center">**Tuítes por Hora**
+**Quantidade de Tuítes por Hora**
 
-<img src="Imagens/TweetsHora.png" /></p>
+<img src="Imagens/TweetsHora.png" />
 
 ##4. Conclusão
 
@@ -451,25 +451,25 @@ Para auxiliar, segue a Word Cloud que representa a frequência dos termos que ma
 
 ##5. Bibliografia
 
-1. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure.** Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
+1. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure**. Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
 
-2. **Twitter Developer Documentation - API Overview.** Disponível em https://dev.twitter.com/overview/api - Acesso em 09 de dez. de 2016.
+2. **Twitter Developer Documentation - API Overview**. Disponível em https://dev.twitter.com/overview/api - Acesso em 09 de dez. de 2016.
 
-3. **Utilizando a API do Twitter no desenvolvimento de aplicações web com PHP e cURL.** Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx - Acesso em 09 de dez. de 2016.
+3. **Utilizando a API do Twitter no desenvolvimento de aplicações web com PHP e cURL**. Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx - Acesso em 09 de dez. de 2016.
 
-4. **MongoDB Manual - Map-Reduce.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ - Acesso em 09 de dez. de 2016.
+4. **MongoDB Manual - Map-Reduce**. Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ - Acesso em 09 de dez. de 2016.
 
-5. **Brincando com dados: Ganhadores do Oscar.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ - Acesso em 09 de dez. de 2016.
+5. **Brincando com dados: Ganhadores do Oscar**. Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ - Acesso em 09 de dez. de 2016.
 
-6. **Listas de stopwords - stoplist (portugues, ingles, espanhol).** Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html - Acesso em 09 de dez. de 2016.
+6. **Listas de stopwords - stoplist (portugues, ingles, espanhol)**. Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html - Acesso em 09 de dez. de 2016.
 
-7. **Ferramenta Word Tagul Clouds.** Disponível em https://tagul.com/create - Acesso em 09 de dez. de 2016.
+7. **Ferramenta Word Tagul Clouds**. Disponível em https://tagul.com/create - Acesso em 09 de dez. de 2016.
 
-8.  **Stop Words – Como Funcionam Palavras de Parada?.** Disponível em http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/ - Acesso em 09 de dez. de 2016.
+8.  **Stop Words – Como Funcionam Palavras de Parada?**. Disponível em http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/ - Acesso em 09 de dez. de 2016.
 
-9. **O que se esconde por trás de uma nuvem de palavras?.** Disponível em http://tarciziosilva.com.br/blog/o-que-se-esconde-por-tras-de-uma-nuvem-de-palavras/ - Acesso em 09 de dez. de 2016.
+9. **O que se esconde por trás de uma nuvem de palavras?**. Disponível em http://tarciziosilva.com.br/blog/o-que-se-esconde-por-tras-de-uma-nuvem-de-palavras/ - Acesso em 09 de dez. de 2016.
 
-
+10. **Métodos para Análise de Sentimentos em mídias sociais - Dcc\UFMG**. Disponível em http://homepages.dcc.ufmg.br/~fabricio/download/webmedia-short-course.pdf - Acesso em 09 de dez. de 2016.
 
 
 
