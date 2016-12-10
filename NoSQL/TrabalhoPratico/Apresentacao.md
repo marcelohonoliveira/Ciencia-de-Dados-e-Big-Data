@@ -92,7 +92,7 @@ Como já citado, os dados dos tweets foram devidamente armazenados em um banco d
 
 Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tuítes coletados.
 
->**Um arquivo com todos os tuítes está disponível em JSON [aqui](Arquivos/Tweets.json).**
+>**Um arquivo com amostra dos Tuítes está disponível em JSON [aqui](Arquivos/Tweets-Limit100.json).**
 
 ***Estatísticas da coleção Tweets:***
 ```javascript
@@ -408,7 +408,7 @@ true
 
 Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos encontrados nos dados totais (~1M de tuítes). Isso gerou uma coleção com 277.616 documentos. Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
 
->**Um arquivo com todos os Termos está disponível em JSON [aqui](Arquivos/Terms.json).**
+>**Um arquivo com amostra dos Termos está disponível em JSON [aqui](Arquivos/Terms-Limit100.json).**
 
 ####3.2.1 Stop Words
 
