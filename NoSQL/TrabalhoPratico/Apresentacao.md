@@ -179,7 +179,7 @@ mongoexport --db TwitterListenerPlus --collection Tweets --out "Tweets.json"
 
 ####3.1.3 Implementação do MapReduce
 
-MapReduce é um modelo de programação, e framework introduzido pelo Google para suportar computações paralelas em grandes coleções de dados em clusters de computadores. Aqui, foi realizado em apenas um cluster: o desktop Windows.
+MapReduce é um modelo de programação e framework introduzido pelo Google para suportar computações paralelas em grandes coleções de dados em clusters de computadores. Aqui, foi realizado em apenas um cluster: o desktop Windows.
 
 O MongoDB disponibiliza uma função nativa de MapReduce.
 
@@ -197,7 +197,7 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
  * Exclui caracteres de quebra de linha e tabulação;
  * Exclui espaços repetidos;
  * Exclui a acentuação e cedilha;
- * Torna texto em letras maiúsculas
+ * Torna texto em letras maiúsculas;
 3. Para cada palavra, criação de um registro novo.
 
 
@@ -234,6 +234,7 @@ var reduce_fn = function (key, value)
 ####3.1.4 Execução do MapReduce
 
 ***Chamada da função MapReduce para a collection “Tweets”:***
+
 O resultado é armazenado numa nova collection chamada “Terms”.
 ```javascript
 var result = db.Tweets.mapReduce(
@@ -283,7 +284,7 @@ while (cursor_tweets_hour.hasNext())
 cursor_tweets_hour.close();
 ```
 
-***No Terminal Windows (CMD), carregamento e execução do arquivo *.JS* com os códigos acima.***
+***No Terminal Windows (CMD), carregamento e execução do arquivo *.js* (Java Script) com os códigos acima.***
 ```javascript
 cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongo
@@ -292,7 +293,7 @@ use TwitterListenerPlus
 load("mapReduce.js")
 ```
 
-***Saída:***
+>***Saída:***
 ```javascript
 ---------------------------------------------------------------------
                       Resultado do MapReduce
@@ -410,11 +411,11 @@ Após a execução do Map-Reduce, foi necessário o refinamento da análise. A e
 
 ####3.2.1 Stop Words
 
-Essa segunda parte da análise consite na remoção das palavras palavras que podem ser consideradas irrelevantes, as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
+Essa segunda parte da análise consiste na remoção das palavras palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
 
 >**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
 
-Foram desconsiderados, também, as seguintes ocorrências:
+Foram desconsideradas, também, as seguintes ocorrências:
 
 | Termo             | Frequência | Observação            |
 | :-----------      | :--------: | :-------------------- |
@@ -430,23 +431,28 @@ A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 201
 
 ####3.2.2 Gráficos
 
-**Top 20 dos Termos mais Frequentes**
+Um gráfico é uma representação dos dados, na forma de figuras geométricas - diagramas, desenhos, ou imagens - que permite ao leitor uma interpretação rápida e objetiva sobre o dados. 
+
+Portanto, um gráfico resume o que já se sabe sobre os dados e, também, revela o que não é evidente, transmitindo ideias e fenômenos que dificilmente seriam visíveis de outra forma - **Poder de Síntese**.
+
+
+**A. Top 20 dos Termos mais Frequentes**
 
 <img src="Imagens/Top20TermosFrequentes.png" />
 
-**Quantidade de Tuítes por Dia**
+**B. Quantidade de Tuítes por Dia**
 
 <img src="Imagens/TweetsDia.png" />
 
-**Quantidade de Tuítes por Hora**
+**C. Quantidade de Tuítes por Hora**
 
 <img src="Imagens/TweetsHora.png" />
 
 ##4. Conclusão
 
-Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais um sentimento relativo do Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade fossem aparecer mais que assuntos sobre a competição esportiva.
+Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais um sentimento relativo ao Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade etc. fossem aparecer mais que assuntos sobre a competição esportiva. Contudo, não se observou isso por meio deste trabalho.
 
-Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem.
+Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem. Evidencia-se, portanto, as palavras relativas a Copa Sul-Americana que à tragédia aérea: CONMEBOL, CAMPEON, RONALDINHO, COPA, SUDAMERICANA, TITULO, COPASUDAMERICANA.
 
 <p align="center"><img src="Imagens/WordCloud.png" /></p>
 
