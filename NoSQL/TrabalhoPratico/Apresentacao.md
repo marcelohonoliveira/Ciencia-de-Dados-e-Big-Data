@@ -177,6 +177,7 @@ A análise foi divida em duas etapas a saber:
 
 * A primeira com o objetivo de reduzir a quantidade grande de dados a um volume trabalhável e verificar a frequência por dia e por hora.
 * E a segunda objetivando ir a um nível de maior detalhamento, tratamentos finos e preparação da apresentação dos resultados.
+
 <br />
 ###3.1 Análise Primária: Tratamentos Iniciais
 
