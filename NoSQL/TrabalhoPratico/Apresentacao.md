@@ -29,6 +29,7 @@ O trabalho consiste, então, na coleta de, aproximadamente, 1 milhão de posts d
 Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitos ruídos, não foram considerados.
 
 A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
+
 <br />
 ###2.2 Ferramenta de Captura
 
@@ -78,6 +79,7 @@ Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publica
     }
 ```
 
+<br />
 ####2.2.2 API Twitter
 
 A API do Twitter permite que diversos aplicativos conectem-se a ela para os mais variados fins. O funcionamento desta API é baseado em algumas tecnologias e conceitos como OAuth e REST que não serão detalhados neste trabalho.
@@ -88,6 +90,7 @@ Para a captura do fluxo do Twitter em tempo real, é necessária uma autenticaç
 * ***userAccessToken*** - Token de acesso da aplicação;
 * ***userAccessSecret*** - Senha de acesso da aplicação.
 
+<br />
 ####2.2.3 Execução do Programa
 
 A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de RAM) não apresentou problemas de desempenho, incidentes ou falhas durante o coleta, armazenado e análise dos dados.
@@ -132,6 +135,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
         "ok" : 1
 }
 ```
+
 <br />
 ####2.3.2 Primeiro Tuíte Coletado (Retweet de @Glaysson):
 
@@ -151,6 +155,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
         "lang" : "Portuguese"
 }
 ```
+
 <br />
 ####2.3.3 Último Tuíte Coletado (Publicação de @thinkingespana):
 
@@ -182,6 +187,7 @@ A análise foi divida em duas etapas a saber:
 ###3.1 Análise Primária: Tratamentos Iniciais
 
 ####3.1.1 Iniciar o serviço para o Mongo DB
+
 <br />
 ***No Terminal Windows (CMD):***
 ```
@@ -190,14 +196,16 @@ cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongod --dbpath="C:/Program Files/MongoDB/Data"
 ```
 
-####3.1.2 Exportar os Tuítes em arquivo JSON (apenas backup)
 <br />
+####3.1.2 Exportar os Tuítes em arquivo JSON (apenas backup)
+
 ***No Terminal Windows (CMD):***
 ```
 cd “C:\Program Files\MongoDB\Server\3.2\bin”
 mongoexport --db TwitterListenerPlus --collection Tweets --out "Tweets.json"
 ```
 
+<br />
 ####3.1.3 Implementação do MapReduce
 
 MapReduce é um modelo de programação e framework introduzido pela [Google](https://www.google.com) para suportar computações paralelas em grandes coleções de dados em clusters de computadores. Aqui, foi realizado em apenas um cluster: o desktop Windows.
@@ -250,6 +258,7 @@ var reduce_fn = function (key, value)
     return Array.sum(value);
 };
 ```
+
 <br />
 ####3.1.4 Execução do MapReduce
 
@@ -277,6 +286,7 @@ while (cursor_freq_terms.hasNext())
 
 cursor_freq_terms.close();
 ```
+
 <br />
 ***Código para exibição do Volume de Tuítes por Dia***
 ```javascript
@@ -290,6 +300,7 @@ while (cursor_tweets_day.hasNext())
 
 cursor_tweets_day.close();
 ```
+
 <br />
 ***Código para exibição do Volume de Tuítes por Hora***
 ```javascript
@@ -303,6 +314,7 @@ while (cursor_tweets_hour.hasNext())
 
 cursor_tweets_hour.close();
 ```
+
 <br />
 ***No Terminal Windows (CMD), carregamento e execução do arquivo *.js* (Java Script) com os códigos acima.***
 ```javascript
@@ -430,6 +442,7 @@ Após a execução do Map-Reduce, foi necessário o refinamento da análise. A e
 
 >**Um arquivo com amostra dos Termos está disponível em JSON [aqui](Arquivos/Terms-Limit100.json).**
 
+<br />
 ####3.2.1 Stop Words
 
 Essa segunda parte da análise consiste na remoção das palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
