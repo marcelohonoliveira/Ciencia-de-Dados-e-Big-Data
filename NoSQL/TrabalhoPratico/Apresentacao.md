@@ -414,8 +414,6 @@ Após a execução do Map-Reduce, foi necessário o refinamento da análise. A e
 
 Essa segunda parte da análise consite na remoção das palavras palavras que podem ser consideradas irrelevantes, as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
 
-A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 2016](https://products.office.com/pt-br/excel), onde foram filtradas apenas as palavra com significado e gerados os gráficos finais: Tuítes por Dia e Tuítes por Hora.
-
 >**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
 
 Foram desconsiderados, também, as seguintes ocorrências:
@@ -426,6 +424,11 @@ Foram desconsiderados, também, as seguintes ocorrências:
 | HTTPSTCOUTGUKSZNZ | 30823      | Link quebrado         |
 | HTTPSTCOREUCORU   | 30822      | Link quebrado         |
 | HTTPS             | 26981      | Link quebrado         |
+
+A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 2016](https://products.office.com/pt-br/excel), onde foram filtradas apenas as palavra com significado e gerados os gráficos finais:
+* Top 20 dos Termos mais Frequentes
+* Quantidade de Tuítes por Dia
+* Quantidade de Tuítes por Hora
 
 ####3.2.2 Gráficos
 
@@ -445,7 +448,7 @@ Foram desconsiderados, também, as seguintes ocorrências:
 
 Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais um sentimento relativo do Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade fossem aparecer mais que assuntos sobre a competição esportiva.
 
-Para auxiliar, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem.
+Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem.
 
 <p align="center"><img src="Imagens/WordCloud.png" /></p>
 
