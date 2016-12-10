@@ -490,6 +490,6 @@ Para o autor deste trabalho, a experiência obtida foi enriquecedora para seu cu
 
 10. **Métodos para Análise de Sentimentos em mídias sociais - Dcc\UFMG**. Disponível em http://homepages.dcc.ufmg.br/~fabricio/download/webmedia-short-course.pdf - Acesso em 09 de dez. de 2016.
 
-
+<p align="center"><img src="Imagens/WordCloudTrabalho.png" /></p>
 
 
