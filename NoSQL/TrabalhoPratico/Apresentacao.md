@@ -46,10 +46,7 @@ O programa é executado em Console Windows e ao ser iniciado:
 
 Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publicação***, o ***Identificador***, o ***Texto*** e o ***Idioma*** do tuíte - dados básicos para a análise proposta.
 
-<br />
 > **O código-fonte da aplicação está disponível [aqui](TwitterListenerPlus).**
-<br />
-<br />
 
 ***Classe Tweet:***
 ```c#
@@ -109,9 +106,7 @@ Como já citado, os dados dos tuítes foram devidamente armazenados em um banco 
 
 Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tuítes coletados.
 
-<br />
 >**Um arquivo com amostra dos Tuítes está disponível em JSON [aqui](Arquivos/Tweets-Limit100.json).**
-<br />
 
 ***Estatísticas da Coleção Tweets:***
 ```javascript
@@ -430,9 +425,7 @@ true
 
 Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos - **277.616 documentos** - encontrados nos dados totais (~1M de tuítes). Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
 
-<br />
 >**Um arquivo com amostra dos Termos está disponível em JSON [aqui](Arquivos/Terms-Limit100.json).**
-<br />
 
 ####3.2.1 Stop Words
 
