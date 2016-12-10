@@ -46,6 +46,7 @@ O programa é executado em Console Windows e ao ser iniciado:
 
 Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publicação***, o ***Identificador***, o ***Texto*** e o ***Idioma*** do tuíte - dados básicos para a análise proposta.
 
+<br />
 > **O código-fonte da aplicação está disponível [aqui](TwitterListenerPlus).**
 
 ***Classe Tweet:***
@@ -93,8 +94,10 @@ A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de
 
 A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas 3 interrupções de no máximo 1 hora no total devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 2% do montante total).
 
+<br />
 >**Screenshot da Execução em modo de Depuração:**
 <p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
+
 <br />
 ###2.3 Os Dados Coletados
 
@@ -104,6 +107,7 @@ Como já citado, os dados dos tuítes foram devidamente armazenados em um banco 
 
 Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tuítes coletados.
 
+<br />
 >**Um arquivo com amostra dos Tuítes está disponível em JSON [aqui](Arquivos/Tweets-Limit100.json).**
 
 ***Estatísticas da Coleção Tweets:***
@@ -129,12 +133,14 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
         "ok" : 1
 }
 ```
+<br />
 ####2.3.2 Primeiro Tuíte Coletado (Retweet de @Glaysson):
 
 <img src="Imagens/PrimeiroTweet.png" />
 
 Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
+<br />
 ***Documento do Tuíte no MongoDB:***
 ```javascript
 > db.Tweets.find().sort({created_at : 1}).limit(1).pretty()
@@ -146,7 +152,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
         "lang" : "Portuguese"
 }
 ```
-
+<br />
 ####2.3.3 Último Tuíte Coletado (Publicação de @thinkingespana):
 
 <img src="Imagens/UltimoTweet.png" />
