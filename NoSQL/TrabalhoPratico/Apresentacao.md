@@ -456,6 +456,8 @@ Para auxiliar na visualização destes resultados, segue a Word Cloud que repres
 
 <p align="center"><img src="Imagens/WordCloud.png" /></p>
 
+Para o autor deste trabalho, a experiência obtida foi enriquecedora para seu currículo acadêmico e profissional. Seus objetivos de aprendizagem foram alcançados, pois o desenvolvimento do trabalho permitiu o estudo de novas ferramentas e a prática de conceitos aprendidos durante a disciplina de Bancos de Dados Não Relacionais do curso de Ciência de Dados e Big Data.
+
 ##5. Bibliografia
 
 1. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure**. Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
