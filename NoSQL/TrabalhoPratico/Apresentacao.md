@@ -416,7 +416,9 @@ Essa segunda parte da análise consite na remoção das palavras palavras que po
 
 A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 2016](https://products.office.com/pt-br/excel), onde foram filtradas apenas as palavra com significado e gerados os gráficos finais: Tuítes por Dia e Tuítes por Hora.
 
-Foram desconsiderados, tambéms, as seguintes ocorrências:
+>**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
+
+Foram desconsiderados, também, as seguintes ocorrências:
 
 | Termo             | Frequência | Observação            |
 | :-----------      | :--------: | :-------------------- |
@@ -425,45 +427,47 @@ Foram desconsiderados, tambéms, as seguintes ocorrências:
 | HTTPSTCOREUCORU   | 30822      | Link quebrado         |
 | HTTPS             | 26981      | Link quebrado         |
 
->**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
-
 ####3.2.2 Gráficos
 
-**Top 20 dos Termos mais Frequentes**
+<p align="center">**Top 20 dos Termos mais Frequentes**
 
-<p align="center"><img src="Imagens/Top20TermosFrequentes.png" /></p>
+<img src="Imagens/Top20TermosFrequentes.png" /></p>
 
-**Tuítes por Dia**
+<p align="center">**Tuítes por Dia**
 
-<p align="center"><img src="Imagens/TweetsDia.png" /></p>
+<img src="Imagens/TweetsDia.png" /></p>
 
-**Tuítes por Hora**
+<p align="center">**Tuítes por Hora**
 
-<p align="center"><img src="Imagens/TweetsHora.png" /></p>
+<img src="Imagens/TweetsHora.png" /></p>
 
 ##4. Conclusão
 
 Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais um sentimento relativo do Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade fossem aparecer mais que assuntos sobre a competição esportiva.
 
+Para auxiliar, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem.
+
 <p align="center"><img src="Imagens/WordCloud.png" /></p>
 
 ##5. Bibliografia
 
-1. **Listas de stopwords - stoplist (portugues, ingles, espanhol).** Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html - Acesso em 09 de dez. de 2016.
+1. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure.** Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
 
-2. **Ferramenta Word Tagul Clouds.** Disponível em https://tagul.com/create - Acesso em 09 de dez. de 2016.
+2. **Twitter Developer Documentation - API Overview.** Disponível em https://dev.twitter.com/overview/api - Acesso em 09 de dez. de 2016.
 
-3. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure.** Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
+3. **Utilizando a API do Twitter no desenvolvimento de aplicações web com PHP e cURL.** Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx - Acesso em 09 de dez. de 2016.
 
-4. **Twitter Developer Documentation - API Overview.** Disponível em https://dev.twitter.com/overview/api - Acesso em 09 de dez. de 2016.
+4. **MongoDB Manual - Map-Reduce.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ - Acesso em 09 de dez. de 2016.
 
-5. **Utilizando a API do Twitter no desenvolvimento de aplicações web com PHP e cURL.** Disponível em http://www.linhadecodigo.com.br/artigo/3471/utilizando-a-api-do-twitter-no-desenvolvimento-de-aplicacoes-web-com-php-e-curl.aspx - Acesso em 09 de dez. de 2016.
+5. **Brincando com dados: Ganhadores do Oscar.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ - Acesso em 09 de dez. de 2016.
 
-6. **MongoDB Manual - Map-Reduce.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ - Acesso em 09 de dez. de 2016.
+6. **Listas de stopwords - stoplist (portugues, ingles, espanhol).** Disponível em http://miningtext.blogspot.com.br/2008/11/listas-de-stopwords-stoplist-portugues.html - Acesso em 09 de dez. de 2016.
 
-7. **Brincando com dados: Ganhadores do Oscar.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ - Acesso em 09 de dez. de 2016.
+7. **Ferramenta Word Tagul Clouds.** Disponível em https://tagul.com/create - Acesso em 09 de dez. de 2016.
 
 8.  **Stop Words – Como Funcionam Palavras de Parada?.** Disponível em http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/ - Acesso em 09 de dez. de 2016.
+
+9. **O que se esconde por trás de uma nuvem de palavras?.** Disponível em http://tarciziosilva.com.br/blog/o-que-se-esconde-por-tras-de-uma-nuvem-de-palavras/ - Acesso em 09 de dez. de 2016.
 
 
 
