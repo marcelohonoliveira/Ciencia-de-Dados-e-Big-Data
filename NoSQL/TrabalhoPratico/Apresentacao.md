@@ -9,22 +9,22 @@ marcelohonoliveira@gmail.com
 </p>
 ##1. Introdução
 
-Conforme solicitado pelo professor Gabriel Coutinho, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que vitimou a delegação da Chapecoense que seguia para Medellín, na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
+Conforme solicitado pelo professor Gabriel Coutinho, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que vitimou a delegação da Chapecoense que seguia para Medellín na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
 
-Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas Redes Sociais. De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no Twitter em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
+Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas Redes Sociais. De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no [Twitter](https://twitter.com/search?q=%23ForcaChape&src=tyah&lang=pt-br) em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
 
-Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunidade para uma coleta de posts em tempo real com um tema bem específico e com grande volume de publicações em pouco tempo. Não restou dúvida: o assunto deveria ser, de fato, o acidente com o avião da equipe da Chapecoense e diversos jornalistas esportivos que aconteceu na madrugada do dia 29 de novembro de 2016 próximo a Medellín, na Colômbia.
+Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunidade para uma coleta de posts em tempo real com um tema bem específico e com grande volume de publicações em pouco tempo. Não restou dúvida: o assunto deveria ser, de fato, o acidente com o avião da equipe da Chapecoense e diversos jornalistas esportivos que aconteceu na madrugada do dia 29 de novembro de 2016 próximo à Medellín, na Colômbia.
 
 ##2. Desenvolvimento
 
 ###2.1 Estratégia de Coleta
 
-O trabalho consiste, então, na coleta de aproximadamente 1 milhão de posts do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os termos:
+O trabalho consiste, então, na coleta de, aproximadamente, 1 milhão de posts do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os termos:
 * **forçachape**
 * **forcachape**
 * **chapecoense**
 
-Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitas ruídos, não foram considerados.
+Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitos ruídos, não foram considerados.
 
 A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
 
@@ -32,15 +32,19 @@ A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vít
 
 ####2.2.1 O Twitter Listener Plus
 
-Foi desenvolvida uma aplicação para escuta do Tweeter batizada de “Twitter Listener Plus” e codificada em linguagem C# com o framework Microsoft .Net versão 4.5.2 e banco de dados MongoDB. A IDE (do inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado) utilizada foi o Microsoft Visual Studio 14.
-Para a conexão com o banco de dados inclui-se na aplicação o driver [MongoDB Driver versão 2.3.0](https://www.nuget.org/packages/MongoDB.Driver/2.3.0) e para leitura do Twitter foi adicionada à aplicação a biblioteca [Tweetinvi versão 1.1.1](https://www.nuget.org/packages/TweetinviAPI).
+Foi desenvolvida uma aplicação para escuta do Tweeter batizada de “Twitter Listener Plus” e codificada em linguagem C# com o [framework Microsoft .Net versão 4.5.2](https://www.microsoft.com/pt-br/download/details.aspx?id=30653) e banco de dados [MongoDB](https://www.mongodb.com/). A IDE (do inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado) utilizada foi o [Microsoft Visual Studio 14](https://msdn.microsoft.com/pt-br/library/dd831853.aspx).
+Para a conexão com o banco de dados, inclui-se na aplicação o driver [MongoDB Driver versão 2.3.0](https://www.nuget.org/packages/MongoDB.Driver/2.3.0) e para leitura do Twitter foi adicionada à aplicação a biblioteca [Tweetinvi versão 1.1.1](https://www.nuget.org/packages/TweetinviAPI).
 
-A ferramenta consiste de um Programa Principal (classe Program) e uma classe que representasse a entidade Tweet.
+A ferramenta consiste de um Programa Principal - classe "Program" - e uma classe que representasse a entidade Tuíte - "Tweet".
 
-O programa é executado em Console Windows e ao ser iniciado, começa a capturar todos os tuítes que no seu texto constasse as palavras definidas na etapa anterior, mostra na tela o texto e armazena em um banco de dados NoSQL não-relacional cada captura.
-Propositalmente, foram persistidos apenas a ***Data de Publicação***, o ***Identificador***, o ***Texto*** e o ***Idioma*** do tuíte - dados básicos para a análise proposta.
+O programa é executado em Console Windows e ao ser iniciado:
+1. Começa a capturar todos os tuítes que, em seu texto, constasse as palavras definidas na etapa anterior;
+2. Mostra na tela o texto do tuíte;
+3. Armazena em um banco de dados NoSQL não-relacional cada captura.
 
-> **O código-fonte está disponível [aqui](TwitterListenerPlus).**
+Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publicação***, o ***Identificador***, o ***Texto*** e o ***Idioma*** do tuíte - dados básicos para a análise proposta.
+
+> **O código-fonte da aplicação está disponível [aqui](TwitterListenerPlus).**
 
 ***Classe Tweet:***
 ```c#
@@ -73,7 +77,7 @@ Propositalmente, foram persistidos apenas a ***Data de Publicação***, o ***Ide
 
 ####2.2.2 API Twitter
 
-A API do Twitter permite que diversos aplicativos conectem-se a ele para os mais variados fins. O funcionamento desta API é baseado em algumas tecnologias e conceitos como OAuth e REST que não serão detalhados neste trabalho.
+A API do Twitter permite que diversos aplicativos conectem-se a ela para os mais variados fins. O funcionamento desta API é baseado em algumas tecnologias e conceitos como OAuth e REST que não serão detalhados neste trabalho.
 Para a captura do fluxo do Twitter em tempo real, é necessária uma autenticação que é basicamente o fornecimento das informações credenciais à API:
 
 * ***consumerKey*** - Identificador do usuário consumidor dos dados;
@@ -83,9 +87,9 @@ Para a captura do fluxo do Twitter em tempo real, é necessária uma autenticaç
 
 ####2.2.3 Execução do Programa
 
-A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de RAM) não apresentou problemas de desempenho, incidentes ou falhas durante o coleta, armazenado e análise.
+A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de RAM) não apresentou problemas de desempenho, incidentes ou falhas durante o coleta, armazenado e análise dos dados.
 
-A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas 3 interrupções de no máximo 1 hora devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 2% do montante total).
+A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas 3 interrupções de no máximo 1 hora no total devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 2% do montante total).
 
 >**Screenshot da Execução em modo de Depuração:**
 <p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
@@ -186,7 +190,7 @@ mongoexport --db TwitterListenerPlus --collection Tweets --out "Tweets.json"
 
 ####3.1.3 Implementação do MapReduce
 
-MapReduce é um modelo de programação e framework introduzido pelo Google para suportar computações paralelas em grandes coleções de dados em clusters de computadores. Aqui, foi realizado em apenas um cluster: o desktop Windows.
+MapReduce é um modelo de programação e framework introduzido pela [Google](https://www.google.com) para suportar computações paralelas em grandes coleções de dados em clusters de computadores. Aqui, foi realizado em apenas um cluster: o desktop Windows.
 
 O MongoDB disponibiliza uma função nativa de MapReduce.
 
@@ -198,15 +202,14 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
 
 **map_fn:**
 
-1. Se o texto é indefinido, retorna;
-2. Cria uma lista de palavras a partir do texto do Tuíte:
+1. Se o texto é indefinido, desconsidera;
+2. Senão, cria uma lista de palavras a partir do texto do Tuíte:
  * Mantém apenas consoantes e vogais (acentuadas ou não);
  * Exclui caracteres de quebra de linha e tabulação;
  * Exclui espaços repetidos;
  * Exclui a acentuação e cedilha;
  * Torna texto em letras maiúsculas;
 3. Para cada palavra, criação de um registro novo.
-
 
 **reduce_fn:**
 
@@ -240,9 +243,9 @@ var reduce_fn = function (key, value)
 
 ####3.1.4 Execução do MapReduce
 
-***Chamada da função MapReduce para a collection “Tweets”:***
+***Chamada da função MapReduce para a coleção “Tweets”:***
 
-O resultado é armazenado numa nova collection chamada “Terms”.
+O resultado é armazenado numa nova _collection_ chamada “Terms”.
 ```javascript
 var result = db.Tweets.mapReduce(
                         map_fn,
@@ -412,13 +415,13 @@ true
 
 ###3.2 Análise Secundária: Tratamentos Finos
 
-Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos encontrados nos dados totais (~1M de tuítes). Isso gerou uma coleção com 277.616 documentos. Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
+Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos - **277.616 documentos** - encontrados nos dados totais (~1M de tuítes). Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
 
 >**Um arquivo com amostra dos Termos está disponível em JSON [aqui](Arquivos/Terms-Limit100.json).**
 
 ####3.2.1 Stop Words
 
-Essa segunda parte da análise consiste na remoção das palavras palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
+Essa segunda parte da análise consiste na remoção das palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
 
 >**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
 
@@ -438,7 +441,7 @@ A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 201
 
 ####3.2.2 Gráficos
 
-Um gráfico é uma representação dos dados, na forma de figuras geométricas - diagramas, desenhos, ou imagens - que permite ao leitor uma interpretação rápida e objetiva sobre o dados. 
+Um gráfico é uma representação dos dados na forma de figuras geométricas - diagramas, desenhos, ou imagens - que permite ao leitor uma interpretação rápida e objetiva sobre o dados. 
 
 Portanto, um gráfico resume o que já se sabe sobre os dados e, também, revela o que não é evidente, transmitindo ideias e fenômenos que dificilmente seriam visíveis de outra forma - **Poder de Síntese**.
 
@@ -457,9 +460,9 @@ Portanto, um gráfico resume o que já se sabe sobre os dados e, também, revela
 
 ##4. Conclusão
 
-Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais um sentimento relativo ao Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade etc. fossem aparecer mais que assuntos sobre a competição esportiva. Contudo, não se observou isso por meio deste trabalho.
+Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais sentimentos relativos ao Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade etc. fossem aparecer mais que assuntos sobre a competição esportiva. Contudo, não se observou isso por meio deste trabalho.
 
-Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem. Evidencia-se, portanto, as palavras relativas a Copa Sul-Americana que à tragédia aérea: CONMEBOL, CAMPEON, RONALDINHO, COPA, SUDAMERICANA, TITULO, COPASUDAMERICANA.
+Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem. Evidencia-se, portanto, as palavras relativas a Copa Sul-Americana que à tragédia aérea: CONMEBOL, CAMPEON, RONALDINHO, COPA, SUDAMERICANA, TITULO, COPASUDAMERICANA entre outras.
 
 <p align="center"><img src="Imagens/WordCloud.png" /></p>
 
