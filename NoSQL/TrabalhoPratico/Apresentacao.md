@@ -49,7 +49,7 @@ Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publica
 <br />
 > **O código-fonte da aplicação está disponível [aqui](TwitterListenerPlus).**
 <br />
-
+<br />
 
 ***Classe Tweet:***
 ```c#
