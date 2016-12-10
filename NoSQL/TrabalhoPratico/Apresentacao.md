@@ -7,18 +7,19 @@ Pontifícia Universidade Católica de Minas Gerais (PUC MINAS)<br />
 Belo Horizonte – MG – Brasil<br />
 marcelohonoliveira@gmail.com
 </p>
-##1. Introdução
 
+##1. Introdução
+<p align="justify">
 Conforme solicitado pelo professor [Gabriel Coutinho](https://github.com/gcouti), o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que vitimou a delegação da Chapecoense que seguia para Medellín na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
 
 Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas Redes Sociais. De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no [Twitter](https://twitter.com/search?q=%23ForcaChape&src=tyah&lang=pt-br) em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
 
 Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunidade para uma coleta de posts em tempo real com um tema bem específico e com grande volume de publicações em pouco tempo. Não restou dúvida: o assunto deveria ser, de fato, o acidente com o avião da equipe da Chapecoense e diversos jornalistas esportivos que aconteceu na madrugada do dia 29 de novembro de 2016 próximo à Medellín, na Colômbia.
-
+</p>
 ##2. Desenvolvimento
 
 ###2.1 Estratégia de Coleta
-
+<p align="justify">
 O trabalho consiste, então, na coleta de, aproximadamente, 1 milhão de posts do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os termos:
 * **forçachape**
 * **forcachape**
@@ -27,11 +28,11 @@ O trabalho consiste, então, na coleta de, aproximadamente, 1 milhão de posts d
 Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc., mas, para que a filtragem fosse bem específica e sem muitos ruídos, não foram considerados.
 
 A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
-
+</p>
 ###2.2 Ferramenta de Captura
 
 ####2.2.1 O Twitter Listener Plus
-
+<p align="justify">
 Foi desenvolvida uma aplicação para escuta do Tweeter batizada de “Twitter Listener Plus” e codificada em linguagem C# com o [framework Microsoft .Net versão 4.5.2](https://www.microsoft.com/pt-br/download/details.aspx?id=30653) e banco de dados [MongoDB](https://www.mongodb.com/). A IDE (do inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado) utilizada foi o [Microsoft Visual Studio 14](https://msdn.microsoft.com/pt-br/library/dd831853.aspx).
 Para a conexão com o banco de dados, inclui-se na aplicação o driver [MongoDB Driver versão 2.3.0](https://www.nuget.org/packages/MongoDB.Driver/2.3.0) e para leitura do Twitter foi adicionada à aplicação a biblioteca [Tweetinvi versão 1.1.1](https://www.nuget.org/packages/TweetinviAPI).
 
@@ -43,7 +44,7 @@ O programa é executado em Console Windows e ao ser iniciado:
 3. Armazena em um banco de dados NoSQL não-relacional cada captura.
 
 Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publicação***, o ***Identificador***, o ***Texto*** e o ***Idioma*** do tuíte - dados básicos para a análise proposta.
-
+</p>
 > **O código-fonte da aplicação está disponível [aqui](TwitterListenerPlus).**
 
 ***Classe Tweet:***
@@ -76,31 +77,32 @@ Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publica
 ```
 
 ####2.2.2 API Twitter
-
+<p align="justify">
 A API do Twitter permite que diversos aplicativos conectem-se a ela para os mais variados fins. O funcionamento desta API é baseado em algumas tecnologias e conceitos como OAuth e REST que não serão detalhados neste trabalho.
 Para a captura do fluxo do Twitter em tempo real, é necessária uma autenticação que é basicamente o fornecimento das informações credenciais à API:
-
+<p>
 * ***consumerKey*** - Identificador do usuário consumidor dos dados;
 * ***consumerSecret*** - Senha do usuário consumidor dos dados;
 * ***userAccessToken*** - Token de acesso da aplicação;
 * ***userAccessSecret*** - Senha de acesso da aplicação.
 
 ####2.2.3 Execução do Programa
-
+<p align="justify">
 A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de RAM) não apresentou problemas de desempenho, incidentes ou falhas durante o coleta, armazenado e análise dos dados.
 
 A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas 3 interrupções de no máximo 1 hora no total devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 2% do montante total).
-
+</p>
 >**Screenshot da Execução em modo de Depuração:**
 <p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
 
 ###2.3 Os Dados Coletados
 
 ####2.3.1 O Armazenamento dos Dados
+<p align="justify">
 Como já citado, os dados dos tuítes foram devidamente armazenados em um banco de dados NoSQL MongoDB.
 
 Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tuítes coletados.
-
+</p>
 >**Um arquivo com amostra dos Tuítes está disponível em JSON [aqui](Arquivos/Tweets-Limit100.json).**
 
 ***Estatísticas da Coleção Tweets:***
@@ -163,12 +165,12 @@ Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 ```
 
 ##3. Análise dos Dados
-
+<p align="justify">
 A análise foi divida em duas etapas a saber:
 
 * A primeira com o objetivo de reduzir a quantidade grande de dados a um volume trabalhável e verificar a frequência por dia e por hora.
 * E a segunda objetivando ir a um nível de maior detalhamento, tratamentos finos e preparação da apresentação dos resultados.
-
+</p>
 ###3.1 Análise Primária: Tratamentos Iniciais
 
 ####3.1.1 Iniciar o serviço para o Mongo DB
@@ -189,13 +191,13 @@ mongoexport --db TwitterListenerPlus --collection Tweets --out "Tweets.json"
 ```
 
 ####3.1.3 Implementação do MapReduce
-
+<p align="justify">
 MapReduce é um modelo de programação e framework introduzido pela [Google](https://www.google.com) para suportar computações paralelas em grandes coleções de dados em clusters de computadores. Aqui, foi realizado em apenas um cluster: o desktop Windows.
 
 O MongoDB disponibiliza uma função nativa de MapReduce.
 
 A imagem abaixo exibe um exemplo fictício para demonstrar o seu funcionamento:
-
+</p>
 <p align="center"><img src="Imagens/MapReduce.png" /></p>
 
 Para essa análise primária, foram escritas as seguintes funções Map e Reduce:
@@ -414,15 +416,15 @@ true
 ```
 
 ###3.2 Análise Secundária: Tratamentos Finos
-
+<p align="justify">
 Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos - **277.616 documentos** - encontrados nos dados totais (~1M de tuítes). Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
-
+</p>
 >**Um arquivo com amostra dos Termos está disponível em JSON [aqui](Arquivos/Terms-Limit100.json).**
 
 ####3.2.1 Stop Words
-
+<p align="justify">
 Essa segunda parte da análise consiste na remoção das palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
-
+</p>
 >**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
 
 Foram desconsideradas, também, as seguintes ocorrências:
@@ -433,19 +435,19 @@ Foram desconsideradas, também, as seguintes ocorrências:
 | HTTPSTCOUTGUKSZNZ | 30823      | Link quebrado         |
 | HTTPSTCOREUCORU   | 30822      | Link quebrado         |
 | HTTPS             | 26981      | Link quebrado         |
-
+<p align="justify">
 A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 2016](https://products.office.com/pt-br/excel), onde foram filtradas apenas as palavra com significado e gerados os gráficos finais:
 * Top 20 dos Termos mais Frequentes
 * Quantidade de Tuítes por Dia
 * Quantidade de Tuítes por Hora
-
+</p>
 ####3.2.2 Gráficos
-
+<p align="justify">
 Um gráfico é uma representação dos dados na forma de figuras geométricas - diagramas, desenhos, ou imagens - que permite ao leitor uma interpretação rápida e objetiva sobre o dados. 
 
 Portanto, um gráfico resume o que já se sabe sobre os dados e, também, revela o que não é evidente, transmitindo ideias e fenômenos que dificilmente seriam visíveis de outra forma - **Poder de Síntese**.
-
-
+</p>
+<br />
 **A. Top 20 dos Termos mais Frequentes**
 
 <img src="Imagens/Top20TermosFrequentes.png" />
@@ -459,17 +461,17 @@ Portanto, um gráfico resume o que já se sabe sobre os dados e, também, revela
 <img src="Imagens/TweetsHora.png" />
 
 ##4. Conclusão
-
+<p align="justify">
 Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais sentimentos relativos ao Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade etc. fossem aparecer mais que assuntos sobre a competição esportiva. Contudo, não se observou isso por meio deste trabalho.
 
 Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem. Evidencia-se, portanto, as palavras relativas a Copa Sul-Americana que à tragédia aérea: CONMEBOL, CAMPEON, RONALDINHO, COPA, SUDAMERICANA, TITULO, COPASUDAMERICANA entre outras.
-
+</p>
 <p align="center"><img src="Imagens/WordCloudConclusao.png" /></p>
-
+<p align="justify">
 Para o autor deste trabalho, a experiência obtida foi enriquecedora para seu currículo acadêmico e profissional. Seus objetivos de aprendizagem foram alcançados, pois o desenvolvimento do trabalho permitiu o estudo de novas ferramentas e a prática de conceitos aprendidos durante a disciplina de Bancos de Dados Não Relacionais do curso de Ciência de Dados e Big Data.
-
+</p>
 ##5. Bibliografia
-
+<p align="justify">
 1. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure**. Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
 
 2. **Twitter Developer Documentation - API Overview**. Disponível em https://dev.twitter.com/overview/api - Acesso em 09 de dez. de 2016.
@@ -489,7 +491,7 @@ Para o autor deste trabalho, a experiência obtida foi enriquecedora para seu cu
 9. **O que se esconde por trás de uma nuvem de palavras?**. Disponível em http://tarciziosilva.com.br/blog/o-que-se-esconde-por-tras-de-uma-nuvem-de-palavras/ - Acesso em 09 de dez. de 2016.
 
 10. **Métodos para Análise de Sentimentos em mídias sociais - Dcc\UFMG**. Disponível em http://homepages.dcc.ufmg.br/~fabricio/download/webmedia-short-course.pdf - Acesso em 09 de dez. de 2016.
-
+</p>
 <p align="center"><img src="Imagens/WordCloudTrabalho.png" /></p>
 
 
