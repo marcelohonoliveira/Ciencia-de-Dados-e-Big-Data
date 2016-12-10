@@ -275,6 +275,7 @@ var result = db.Tweets.mapReduce(
                         });
 ```
 
+<br />
 ***Código para exibição da Lista dos 20 Termos mais frequentes - SEM TRATAMENTO FINO***
 ```javascript
 var cursor_freq_terms = db.Terms.find().limit(20).sort({ value: -1 });
