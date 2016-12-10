@@ -200,7 +200,7 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
  * Exclui espaços repetidos;
  * Exclui a acentuação e cedilha;
  * Torna texto em letras maiúsculas
-3. Para cada palavra, criação um registro novo.
+3. Para cada palavra, criação de um registro novo.
 
 
 **reduce_fn:**
@@ -216,12 +216,9 @@ var map_fn = function ()
 	if (this.text == undefined)
 		return;
 
-
 	var regExp = new RegExp("[^a-záàâãäéèêëíìîïóòôõöúùûüçñ ]", "gi");
 
-
 	var words = this.text.replace(regExp, "").replace(/\n/gi, " ").replace(/\t/gi, " ").replace(/\r/gi, " ").replace(/\s{2,}/g, " ").replace(/[áàâãä]/gi, "a").replace(/[éèêë]/gi, "e").replace(/[íìîï]/gi, "i").replace(/[óòôõö]/gi, "o").replace(/[úùûü]/gi, "u").replace(/ç/gi, "c").toUpperCase().split(" ");
-
 
 	for (var i = 0; i < words.length; i++)
 	{
@@ -409,9 +406,29 @@ true
 
 ###3.2 Análise Secundária: tratamentos finos
 
-Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos encontrados nos dados totais (~1M de tuítes). Isso gerou 
+Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos encontrados nos dados totais (~1M de tuítes). Isso gerou uma coleção com 277.616 documentos. Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
 
 >**Um arquivo com todos os Termos está disponível em JSON [aqui](Arquivos/Terms.json).**
+
+Essa segunda parte da análise consite na remoção das palavras palavras que podem ser consideradas irrelevantes, as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
+
+A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 2016](https://products.office.com/pt-br/excel), onde foram filtradas apenas as palavra com significado e gerados os gráficos finais: Tuítes por Dia e Tuítes por Hora.
+
+Foram desconsiderados, tambéms, as seguintes ocorrências:
+
+RT: 858866 ocorrências
+HTTPSTCOUTGUKSZNZ: 30823
+HTTPSTCOREUCORU: 30822
+HTTPS: 26981
+
+| Termo             | Frequência | Observação            |
+| :-----------      | :--------: | :-------------------- |
+| RT                | 858866     | Retweet (abreviatura) |
+| HTTPSTCOUTGUKSZNZ | 30823      | Link quebrado         |
+| HTTPSTCOREUCORU   | 30822      | Link quebrado         |
+| HTTPS             | 26981      | Link quebrado         |
+
+>**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
 
 **Tuítes por Dia**
 
@@ -440,6 +457,8 @@ Após a execução do Map-Reduce, foi necessário o refinamento da análise. A e
 6. **MongoDB Manual - Map-Reduce.** Disponível em https://docs.mongodb.com/v3.0/core/map-reduce/ - Acesso em 09 de dez. de 2016.
 
 7. **Brincando com dados: Ganhadores do Oscar.** Disponível em http://developers.hekima.com/data-science/brincando-com-dados/2016/02/11/importing_oscar_runners/ - Acesso em 09 de dez. de 2016.
+
+8.  **Stop Words – Como Funcionam Palavras de Parada?.** Disponível em http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/ - Acesso em 09 de dez. de 2016.
 
 
 
