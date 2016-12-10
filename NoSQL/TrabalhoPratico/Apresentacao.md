@@ -1,6 +1,13 @@
 #Análise de Mídia Social: termos mais frequentes no Twitter acerca da tragédia com a Chapecoense
-
-##1. Motivação
+<br />
+<p align="center">
+<b>Marcelo Honório de Oliveira</b><br />
+Instituto de Educação Continuada (IEC)<br />
+Pontifícia Universidade Católica de Minas Gerais (PUC MINAS)<br />
+Belo Horizonte – MG – Brasil<br />
+marcelohonoliveira@gmail.com
+</p>
+##1. Introdução
 
 Conforme solicitado pelo professor Gabriel Coutinho, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que vitimou a delegação da Chapecoense que seguia para Medellín, na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
 
