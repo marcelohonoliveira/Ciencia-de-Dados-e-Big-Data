@@ -48,6 +48,7 @@ Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publica
 
 <br />
 > **O código-fonte da aplicação está disponível [aqui](TwitterListenerPlus).**
+<br />
 
 ***Classe Tweet:***
 ```c#
@@ -109,6 +110,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 
 <br />
 >**Um arquivo com amostra dos Tuítes está disponível em JSON [aqui](Arquivos/Tweets-Limit100.json).**
+<br />
 
 ***Estatísticas da Coleção Tweets:***
 ```javascript
@@ -224,6 +226,7 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
 
 1. Recebe chave e valor;
 2. Retorna a palavra e sua frequência.
+
 <br />
 ***Implementação das Funções Map e Reduce:***
 ```javascript
@@ -420,13 +423,16 @@ load("mapReduce.js")
 { "_id" : "2016-12-05 19:00", "total" : 144 }
 true
 ```
+
 <br />
 ###3.2 Análise Secundária: Tratamentos Finos
 
 Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos - **277.616 documentos** - encontrados nos dados totais (~1M de tuítes). Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
 
+<br />
 >**Um arquivo com amostra dos Termos está disponível em JSON [aqui](Arquivos/Terms-Limit100.json).**
 <br />
+
 ####3.2.1 Stop Words
 
 Essa segunda parte da análise consiste na remoção das palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
@@ -460,14 +466,17 @@ Portanto, um gráfico resume o que já se sabe sobre os dados e, também, revela
 
 <img src="Imagens/Top20TermosFrequentes.png" />
 
+<br />
 **B. Quantidade de Tuítes por Dia**
 
 <img src="Imagens/TweetsDia.png" />
 
+<br />
 **C. Quantidade de Tuítes por Hora**
 
 <img src="Imagens/TweetsHora.png" />
 
+<br />
 ##4. Conclusão
 
 Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais sentimentos relativos ao Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade etc. fossem aparecer mais que assuntos sobre a competição esportiva. Contudo, não se observou isso por meio deste trabalho.
@@ -477,6 +486,7 @@ Para auxiliar na visualização destes resultados, segue a Word Cloud que repres
 <p align="center"><img src="Imagens/WordCloudConclusao.png" /></p>
 
 Para o autor deste trabalho, a experiência obtida foi enriquecedora para seu currículo acadêmico e profissional. Seus objetivos de aprendizagem foram alcançados, pois o desenvolvimento do trabalho permitiu o estudo de novas ferramentas e a prática de conceitos aprendidos durante a disciplina de Bancos de Dados Não Relacionais do curso de Ciência de Dados e Big Data.
+
 <br />
 ##5. Bibliografia
 
