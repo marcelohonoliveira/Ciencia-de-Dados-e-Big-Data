@@ -410,16 +410,13 @@ Após a execução do Map-Reduce, foi necessário o refinamento da análise. A e
 
 >**Um arquivo com todos os Termos está disponível em JSON [aqui](Arquivos/Terms.json).**
 
+####3.2.1 Stop Words
+
 Essa segunda parte da análise consite na remoção das palavras palavras que podem ser consideradas irrelevantes, as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
 
 A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 2016](https://products.office.com/pt-br/excel), onde foram filtradas apenas as palavra com significado e gerados os gráficos finais: Tuítes por Dia e Tuítes por Hora.
 
 Foram desconsiderados, tambéms, as seguintes ocorrências:
-
-RT: 858866 ocorrências
-HTTPSTCOUTGUKSZNZ: 30823
-HTTPSTCOREUCORU: 30822
-HTTPS: 26981
 
 | Termo             | Frequência | Observação            |
 | :-----------      | :--------: | :-------------------- |
@@ -430,6 +427,12 @@ HTTPS: 26981
 
 >**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
 
+####3.2.2 Gráficos
+
+**Top 20 dos Termos mais Frequentes**
+
+<p align="center"><img src="Imagens/Top20TermosFrequentes.png" /></p>
+
 **Tuítes por Dia**
 
 <p align="center"><img src="Imagens/TweetsDia.png" /></p>
@@ -439,6 +442,8 @@ HTTPS: 26981
 <p align="center"><img src="Imagens/TweetsHora.png" /></p>
 
 ##4. Conclusão
+
+Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais um sentimento relativo do Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade fossem aparecer mais que assuntos sobre a competição esportiva.
 
 <p align="center"><img src="Imagens/WordCloud.png" /></p>
 
