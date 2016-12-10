@@ -293,7 +293,7 @@ use TwitterListenerPlus
 load("mapReduce.js")
 ```
 
->***Saída:***
+***Saída:***
 ```javascript
 ---------------------------------------------------------------------
                       Resultado do MapReduce
