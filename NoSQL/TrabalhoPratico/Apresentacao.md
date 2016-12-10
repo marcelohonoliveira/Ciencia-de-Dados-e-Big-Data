@@ -16,6 +16,7 @@ Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas Re
 
 Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunidade para uma coleta de posts em tempo real com um tema bem específico e com grande volume de publicações em pouco tempo. Não restou dúvida: o assunto deveria ser, de fato, o acidente com o avião da equipe da Chapecoense e diversos jornalistas esportivos que aconteceu na madrugada do dia 29 de novembro de 2016 próximo à Medellín, na Colômbia.
 
+<br />
 ##2. Desenvolvimento
 
 ###2.1 Estratégia de Coleta
@@ -169,6 +170,7 @@ Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 }
 ```
 
+<br />
 ##3. Análise dos Dados
 
 A análise foi divida em duas etapas a saber:
