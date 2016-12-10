@@ -4,8 +4,7 @@
 
 Conforme solicitado pelo professor Gabriel Coutinho, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que vitimou a delegação da Chapecoense que seguia para Medellín, na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
 
-Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas redes sociais.
-De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no Twitter em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
+Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas Redes Sociais. De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no Twitter em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
 
 Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunidade para uma coleta de posts em tempo real com um tema bem específico e com grande volume de publicações em pouco tempo. Não restou dúvida: o assunto deveria ser, de fato, o acidente com o avião da equipe da Chapecoense e diversos jornalistas esportivos que aconteceu na madrugada do dia 29 de novembro de 2016 próximo a Medellín, na Colômbia.
 
@@ -13,7 +12,7 @@ Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunida
 
 ###2.1 Estratégia de Coleta
 
-O trabalho consiste, então, na coleta de aproximadamente 1 milhão de post do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os temos:
+O trabalho consiste, então, na coleta de aproximadamente 1 milhão de posts do Twitter sobre o acidente aéreo para posterior análise. Foi definida como chaves de busca os termos:
 * **forçachape**
 * **forcachape**
 * **chapecoense**
@@ -26,13 +25,12 @@ A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vít
 
 ####2.2.1 O Twitter Listener Plus
 
-Foi desenvolvida uma aplicação para escuta do Tweeter batizada de “Twitter Listener Plus”.
-Codificada em linguagem C# com o framework Microsoft .Net versão 4.5.2 e banco de dados MongoDB. A IDE (do inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado) utilizada foi o Microsoft Visual Studio 14.
+Foi desenvolvida uma aplicação para escuta do Tweeter batizada de “Twitter Listener Plus” e codificada em linguagem C# com o framework Microsoft .Net versão 4.5.2 e banco de dados MongoDB. A IDE (do inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado) utilizada foi o Microsoft Visual Studio 14.
 Para a conexão com o banco de dados inclui-se na aplicação o driver [MongoDB Driver versão 2.3.0](https://www.nuget.org/packages/MongoDB.Driver/2.3.0) e para leitura do Twitter foi adicionada à aplicação a biblioteca [Tweetinvi versão 1.1.1](https://www.nuget.org/packages/TweetinviAPI).
 
 A ferramenta consiste de um Programa Principal (classe Program) e uma classe que representasse a entidade Tweet.
 
-O programa é executado em Console Windows e ao ser iniciado, começa a capturar todos os tweets que no seu texto constasse as palavras definidas na etapa anterior, mostra na tela o texto e armazena em um banco de dados NoSQL não-relacional cada captura.
+O programa é executado em Console Windows e ao ser iniciado, começa a capturar todos os tuítes que no seu texto constasse as palavras definidas na etapa anterior, mostra na tela o texto e armazena em um banco de dados NoSQL não-relacional cada captura.
 Propositalmente, foram persistidos apenas a ***Data de Publicação***, o ***Identificador***, o ***Texto*** e o ***Idioma*** do tuíte - dados básicos para a análise proposta.
 
 > **O código-fonte está disponível [aqui](TwitterListenerPlus).**
@@ -80,7 +78,7 @@ Para a captura do fluxo do Twitter em tempo real, é necessária uma autenticaç
 
 A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de RAM) não apresentou problemas de desempenho, incidentes ou falhas durante o coleta, armazenado e análise.
 
-A ferramenta cumpriu bem seu objetivo e coletou 1.078.141 tweets com apenas 3 interrupções de no máximo 10 minutos devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 2% do montante total).
+A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas 3 interrupções de no máximo 1 hora devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 2% do montante total).
 
 >**Screenshot da Execução em modo de Depuração:**
 <p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
@@ -88,13 +86,13 @@ A ferramenta cumpriu bem seu objetivo e coletou 1.078.141 tweets com apenas 3 in
 ###2.3 Os Dados Coletados
 
 ####2.3.1 O Armazenamento dos Dados
-Como já citado, os dados dos tweets foram devidamente armazenados em um banco de dados NoSQL MongoDB.
+Como já citado, os dados dos tuítes foram devidamente armazenados em um banco de dados NoSQL MongoDB.
 
 Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”*** e uma _Collection_ chamado ***”Tweets”*** que guarda em documento JSON os tuítes coletados.
 
 >**Um arquivo com amostra dos Tuítes está disponível em JSON [aqui](Arquivos/Tweets-Limit100.json).**
 
-***Estatísticas da coleção Tweets:***
+***Estatísticas da Coleção Tweets:***
 ```javascript
 > db.Tweets.stats()
 {
@@ -117,7 +115,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
         "ok" : 1
 }
 ```
-####2.3.2 Primeiro tuíte coletado (Retweet de @Glaysson):
+####2.3.2 Primeiro Tuíte Coletado (Retweet de @Glaysson):
 
 <img src="Imagens/PrimeiroTweet.png" />
 
@@ -135,7 +133,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 }
 ```
 
-####2.3.3 Último tuíte (Publicação de @thinkingespana):
+####2.3.3 Último Tuíte Coletado (Publicação de @thinkingespana):
 
 <img src="Imagens/UltimoTweet.png" />
 
@@ -158,9 +156,9 @@ Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 A análise foi divida em duas etapas a saber:
 
 * A primeira com o objetivo de reduzir a quantidade grande de dados a um volume trabalhável e verificar a frequência por dia e por hora.
-* E a segunda objetivando ir a um nível de maior detalhamento, tratamentos finos e preparação da apresentação dos resultados
+* E a segunda objetivando ir a um nível de maior detalhamento, tratamentos finos e preparação da apresentação dos resultados.
 
-###3.1 Análise Primária: tratamentos iniciais
+###3.1 Análise Primária: Ttratamentos Iniciais
 
 ####3.1.1 Iniciar o serviço para o Mongo DB
 
@@ -404,7 +402,7 @@ load("mapReduce.js")
 true
 ```
 
-###3.2 Análise Secundária: tratamentos finos
+###3.2 Análise Secundária: Tratamentos Finos
 
 Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos encontrados nos dados totais (~1M de tuítes). Isso gerou uma coleção com 277.616 documentos. Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
 
