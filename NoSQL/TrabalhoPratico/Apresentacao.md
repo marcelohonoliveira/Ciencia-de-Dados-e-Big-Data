@@ -2,7 +2,7 @@
 
 ##1. Motivação
 
-Conforme solicitado pelo professor Gabriel Coutinho, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que matou a delegação da Chapecoense que seguia para Medellín, na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
+Conforme solicitado pelo professor Gabriel Coutinho, o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que vitimou a delegação da Chapecoense que seguia para Medellín, na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
 
 Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas redes sociais.
 De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no Twitter em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
