@@ -464,7 +464,7 @@ Levando-se em conta o que foi observado nesta análise, os termos mais frequente
 
 Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem. Evidencia-se, portanto, as palavras relativas a Copa Sul-Americana que à tragédia aérea: CONMEBOL, CAMPEON, RONALDINHO, COPA, SUDAMERICANA, TITULO, COPASUDAMERICANA entre outras.
 
-<p align="center"><img src="Imagens/WordCloud.png" /></p>
+<p align="center"><img src="Imagens/WordCloudConclusao.png" /></p>
 
 Para o autor deste trabalho, a experiência obtida foi enriquecedora para seu currículo acadêmico e profissional. Seus objetivos de aprendizagem foram alcançados, pois o desenvolvimento do trabalho permitiu o estudo de novas ferramentas e a prática de conceitos aprendidos durante a disciplina de Bancos de Dados Não Relacionais do curso de Ciência de Dados e Big Data.
 
