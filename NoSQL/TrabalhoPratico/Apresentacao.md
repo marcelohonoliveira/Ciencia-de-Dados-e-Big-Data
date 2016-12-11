@@ -493,7 +493,7 @@ Portanto, um gráfico resume o que já se sabe sobre os dados e, também, revela
 
 Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais sentimentos relativos ao Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade etc. fossem aparecer mais que assuntos sobre a competição esportiva. Contudo, não se observou isso por meio deste trabalho.
 
-Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem. Evidencia-se, portanto, as palavras relativas a Copa Sul-Americana que à tragédia aérea: CONMEBOL, CAMPEON, RONALDINHO, COPA, SUDAMERICANA, TITULO, COPASUDAMERICANA entre outras.
+Para auxiliar na visualização destes resultados, segue a Word Cloud que representa a frequência dos termos que mais apareceram. Quanto mais vezes uma palavra foi mencionada, maior ela será na imagem. Evidencia-se, portanto, as palavras relativas à Copa Sul-Americana que à tragédia aérea: CONMEBOL, CAMPEON, RONALDINHO, COPA, SUDAMERICANA, TITULO, COPASUDAMERICANA entre outras.
 
 <p align="center"><img src="Imagens/WordCloudConclusao.png" /></p>
 
