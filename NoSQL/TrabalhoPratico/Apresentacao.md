@@ -10,7 +10,7 @@ marcelohonoliveira@gmail.com
 
 ##1. Introdução
 
-Conforme solicitado pelo professor [Gabriel Coutinho](https://github.com/gcouti), o trabalho deveria consistir na coleta e análise de um grande volume de dados. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que vitimou a delegação da Chapecoense que seguia para Medellín na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
+Conforme solicitado pelo professor [Gabriel Coutinho](https://github.com/gcouti), o trabalho deveria consistir na coleta e análise de um grande volume de dados com auxílio, ente outras tecnologias, um banco de dados não relacional. Por infeliz coincidência, durante a escolha do tema para esta análise, acontecia o que foi dado como [a maior tragédia do esporte](http://veja.abril.com.br/tveja/sem-edicao/chapecoense-a-maior-tragedia-do-esporte/): a queda do avião que vitimou a delegação da Chapecoense que seguia para Medellín na véspera da disputa da final da Copa Sul-Americana, além de integrantes da imprensa e tripulação.
 
 Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas Redes Sociais. De acordo com vários veículos de comunicação, depois do acidente que resultou na morte de mais de 70 pessoas, a hashtag **#ForçaChape** se tornou a mais usada no [Twitter](https://twitter.com/search?q=%23ForcaChape&src=tyah&lang=pt-br) em todo o mundo, em solidariedade aos parentes e amigos das vítimas.
 
