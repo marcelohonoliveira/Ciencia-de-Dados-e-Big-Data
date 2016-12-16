@@ -318,7 +318,7 @@ cursor_tweets_hour.close();
 ```
 
 <br />
-***No Terminal Windows (CMD), carregamento e execução do arquivo *.js* (Java Script) com os códigos acima.***
+***No Terminal Windows (CMD), carregamento e execução do arquivo .js (Java Script) com os códigos acima.***
 ```javascript
 cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongo
