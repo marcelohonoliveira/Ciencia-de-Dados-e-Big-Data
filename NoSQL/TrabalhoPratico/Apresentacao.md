@@ -449,7 +449,7 @@ Após a execução do Map-Reduce, foi necessário o refinamento da análise. A e
 
 Essa segunda parte da análise consiste na remoção das palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
 
->**Um arquivo as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
+>**Um arquivo com as Stop Words está disponível [aqui](Arquivos/StopWords.zip).**
 
 Foram desconsideradas, também, as seguintes ocorrências:
 
