@@ -137,7 +137,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 ```
 
 <br />
-####2.3.2 Primeiro Tuíte Coletado (Retweet de @Glaysson):
+####2.3.2 Primeiro Tuíte Coletado (RT - Retuíte de @Glaysson):
 
 <img src="Imagens/PrimeiroTweet.png" />
 
