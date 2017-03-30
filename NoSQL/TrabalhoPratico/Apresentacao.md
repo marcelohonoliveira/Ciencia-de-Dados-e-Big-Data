@@ -94,6 +94,7 @@ A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de
 A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas 3 interrupções de no máximo 1 hora no total devido a problemas de rede (Internet) e queda rápida de energia. As interrupções não prejudicaram o trabalho por terem ocorrido apenas 3 vezes com tempo mínimo de duração e perda insignificante de tweets (menos de 2% do montante total).
 
 <br />
+
 >**Screenshot da Execução em modo de Depuração:**
 <p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
 
@@ -232,7 +233,9 @@ Para essa análise primária, foram escritas as seguintes funções Map e Reduce
 2. Retorna a palavra e sua frequência.
 
 <br />
+
 ***Implementação das Funções Map e Reduce:***
+
 ```javascript
 var map_fn = function ()
 {
@@ -257,6 +260,7 @@ var reduce_fn = function (key, value)
 ```
 
 <br />
+
 #### 3.1.4 Execução do MapReduce
 
 ***Chamada da função MapReduce para a coleção “Tweets”:***
@@ -273,7 +277,9 @@ var result = db.Tweets.mapReduce(
 ```
 
 <br />
+
 ***Código para exibição da Lista dos 20 Termos mais frequentes - SEM TRATAMENTO FINO***
+
 ```javascript
 var cursor_freq_terms = db.Terms.find().limit(20).sort({ value: -1 });
 
@@ -286,7 +292,9 @@ cursor_freq_terms.close();
 ```
 
 <br />
+
 ***Código para exibição do Volume de Tuítes por Dia***
+
 ```javascript
 var cursor_tweets_day = db.Tweets.aggregate({ $group: { _id: { $dateToString: { format: "%Y-%m-%d", date: "$created_at" } }, total: { $sum: 1 } } }
 					   , { $sort: { _id: 1 } });
@@ -300,7 +308,9 @@ cursor_tweets_day.close();
 ```
 
 <br />
+
 ***Código para exibição do Volume de Tuítes por Hora***
+
 ```javascript
 var cursor_tweets_hour = db.Tweets.aggregate({ $group: { _id: { $dateToString: { format: "%Y-%m-%d %H:00", date: "$created_at" } }, total: { $sum: 1 } } }
 					    , { $sort: { _id: 1 } });
@@ -314,7 +324,9 @@ cursor_tweets_hour.close();
 ```
 
 <br />
+
 ***No Terminal Windows (CMD), carregamento e execução do arquivo .js (Java Script) com os códigos acima.***
+
 ```javascript
 cd "C:\Program Files\MongoDB\Server\3.2\bin"
 mongo
@@ -324,6 +336,7 @@ load("mapReduce.js")
 ```
 
 ***Saída:***
+
 ```javascript
 ---------------------------------------------------------------------
                       Resultado do MapReduce
@@ -434,6 +447,7 @@ true
 ```
 
 <br />
+
 ### 3.2 Análise Secundária: Tratamentos Finos
 
 Após a execução do Map-Reduce, foi necessário o refinamento da análise. A etapa anterior gerou uma coleção no banco de dados com todos os termos - **277.616 documentos** - encontrados nos dados totais (~1M de tuítes). Cada documento se refere a um termo (palavra) e sua frequência em relação a todos os tuítes.
@@ -441,6 +455,7 @@ Após a execução do Map-Reduce, foi necessário o refinamento da análise. A e
 >**Um arquivo com amostra dos Termos está disponível em JSON [aqui](Arquivos/Terms-Limit100.json).**
 
 <br />
+
 #### 3.2.1 Stop Words
 
 Essa segunda parte da análise consiste na remoção das palavras que podem ser consideradas irrelevantes - as chamadas [Stop Words](http://www.agenciamestre.com/seo/stop-words-como-funcionam-palavras-de-parada/).
@@ -463,6 +478,7 @@ A remoção foi feita utilizando um planilha eletrônica do [Microsoft Excel 201
 * Quantidade de Tuítes por Hora
 
 <br />
+
 #### 3.2.2 Gráficos
 
 Um gráfico é uma representação dos dados na forma de figuras geométricas - diagramas, desenhos, ou imagens - que permite ao leitor uma interpretação rápida e objetiva sobre o dados. 
@@ -470,21 +486,25 @@ Um gráfico é uma representação dos dados na forma de figuras geométricas - 
 Portanto, um gráfico resume o que já se sabe sobre os dados e, também, revela o que não é evidente, transmitindo ideias e fenômenos que dificilmente seriam visíveis de outra forma - **Poder de Síntese**.
 
 <br />
+
 **A. Top 20 dos Termos mais Frequentes**
 
 <img src="Imagens/Top20TermosFrequentes.png" />
 
 <br />
+
 **B. Quantidade de Tuítes por Dia**
 
 <img src="Imagens/TweetsDia.png" />
 
 <br />
+
 **C. Quantidade de Tuítes por Hora**
 
 <img src="Imagens/TweetsHora.png" />
 
 <br />
+
 ## 4. Conclusão
 
 Levando-se em conta o que foi observado nesta análise, os termos mais frequentes representam mais sentimentos relativos ao Campeonato de Futebol cuja a final seria desputada pela equipe da Chapecoense do que sentimentos de consternação devido ao acidente. Lembrando que a captura de tuítes acontecia durante os ritos funerais das vítimas, esperava-se que termos relacionados à fé, apoio, solidariedade etc. fossem aparecer mais que assuntos sobre a competição esportiva. Contudo, não se observou isso por meio deste trabalho.
@@ -496,6 +516,7 @@ Para auxiliar na visualização destes resultados, segue a Word Cloud que repres
 Para o autor deste trabalho, a experiência obtida foi enriquecedora para seu currículo acadêmico e profissional. Seus objetivos de aprendizagem foram alcançados, pois o desenvolvimento do trabalho permitiu o estudo de novas ferramentas e a prática de conceitos aprendidos durante a disciplina de Bancos de Dados Não Relacionais do curso de Ciência de Dados e Big Data.
 
 <br />
+
 ## 5. Bibliografia
 
 1. **Análise de mídia social: análise de sentimento do Twitter em tempo real na Stream Analytics do Azure**. Disponível em https://docs.microsoft.com/pt-br/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends - Acesso em 09 de dez. de 2016.
