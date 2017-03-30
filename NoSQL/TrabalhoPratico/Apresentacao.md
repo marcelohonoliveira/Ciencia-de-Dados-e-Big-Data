@@ -1,5 +1,7 @@
 # Análise de Mídia Social: termos mais frequentes no Twitter acerca da tragédia com a Chapecoense
+
 <br />
+
 <p align="center">
 <b>Marcelo Honório de Oliveira</b><br />
 Instituto de Educação Continuada (IEC)<br />
@@ -99,6 +101,7 @@ A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas
 <p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
 
 <br />
+
 ### 2.3 Os Dados Coletados
 
 #### 2.3.1 O Armazenamento dos Dados
