@@ -99,6 +99,7 @@ A ferramenta cumpriu bem seu objetivo e coletou **1.078.141 tuítes** com apenas
 <br />
 
 >**Screenshot da Execução em modo de Depuração:**
+
 <p align="center"><img src="Imagens/Screenshot_Execucao.png" /></p>
 
 <br />
@@ -114,6 +115,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 >**Um arquivo com amostra dos Tuítes está disponível em JSON [aqui](Arquivos/Tweets-Limit100.json).**
 
 ***Estatísticas da Coleção Tweets:***
+
 ```javascript
 > db.Tweets.stats()
 {
