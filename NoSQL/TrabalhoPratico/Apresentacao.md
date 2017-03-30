@@ -16,7 +16,6 @@ Obviamente, tal evento gerou uma comoção mundial que logo foi refletida nas Re
 
 Portanto, apesar do assunto de extrema tristeza, o cenário seria uma oportunidade para uma coleta de posts em tempo real com um tema bem específico e com grande volume de publicações em pouco tempo. Não restou dúvida: o assunto deveria ser, de fato, o acidente com o avião da equipe da Chapecoense e diversos jornalistas esportivos que aconteceu na madrugada do dia 29 de novembro de 2016 próximo à Medellín, na Colômbia.
 
-<br />
 ## 2. Desenvolvimento
 
 ### 2.1 Estratégia de Coleta
@@ -30,7 +29,6 @@ Outros termos foram levantados: *acidente*, *tragédia*, *Chapecó*, *chape* etc
 
 A coleta iniciou-se durante os primeiros momentos da chegada dos corpos das vítimas ao Brasil - às **12h38 do dia 03/12/16** - e encerrou-se logo após o anúncio pela Conmebol de que a Chapecoense poderia receber o título de campeã da Copa Sul-Americana - às **17h00 do dia 05/12/16**.
 
-<br />
 ### 2.2 Ferramenta de Captura
 
 #### 2.2.1 O Twitter Listener Plus
@@ -79,7 +77,6 @@ Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publica
     }
 ```
 
-<br />
 #### 2.2.2 API Twitter
 
 A API do Twitter permite que diversos aplicativos conectem-se a ela para os mais variados fins. O funcionamento desta API é baseado em algumas tecnologias e conceitos como OAuth e REST que não serão detalhados neste trabalho.
@@ -90,7 +87,6 @@ Para a captura do fluxo do Twitter em tempo real, é necessária uma autenticaç
 * ***userAccessToken*** - Token de acesso da aplicação;
 * ***userAccessSecret*** - Senha de acesso da aplicação.
 
-<br />
 #### 2.2.3 Execução do Programa
 
 A máquina utilizada (um Desktop Windows 10 32 Bits, Pentium D 2,8GHZ com 2GB de RAM) não apresentou problemas de desempenho, incidentes ou falhas durante o coleta, armazenado e análise dos dados.
@@ -187,7 +183,7 @@ A análise foi divida em duas etapas a saber:
 <br />
 ### 3.1 Análise Primária: Tratamentos Iniciais
 
-####3.1.1 Iniciar o serviço para o Mongo DB
+#### 3.1.1 Iniciar o serviço para o Mongo DB
 
 <br />
 ***No Terminal Windows (CMD):***
