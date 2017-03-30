@@ -51,6 +51,7 @@ Propositalmente, foram persistidos em banco de dados apenas a ***Data de Publica
 > **O código-fonte da aplicação está disponível [aqui](TwitterListenerPlus).**
 
 ***Classe Tweet:***
+
 ```c#
     [Serializable]
     public class Tweet
@@ -137,6 +138,7 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 ```
 
 <br />
+
 #### 2.3.2 Primeiro Tuíte Coletado (RT - Retuíte de @Glaysson):
 
 <img src="Imagens/PrimeiroTweet.png" />
@@ -144,7 +146,9 @@ Foi criado um _Database_ para a aplicação chamado ***“TwitterListenerPlus”
 Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 
 <br />
+
 ***Documento do Tuíte no MongoDB:***
+
 ```javascript
 > db.Tweets.find().sort({created_at : 1}).limit(1).pretty()
 {
@@ -157,6 +161,7 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 ```
 
 <br />
+
 #### 2.3.3 Último Tuíte Coletado (Publicação de @thinkingespana):
 
 <img src="Imagens/UltimoTweet.png" />
@@ -164,7 +169,9 @@ Link do Twitter: https://twitter.com/ChapecoenseReal/status/805002970559553536
 Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 
 <br />
+
 ***Documento do Tuíte no MongoDB:***
+
 ```javascript
 > db.Tweets.find().sort({created_at : -1}).limit(-1).pretty()
 {
@@ -177,6 +184,7 @@ Link do Twitter: https://twitter.com/thinkingespana/status/805849259891363840
 ```
 
 <br />
+
 ## 3. Análise dos Dados
 
 A análise foi divida em duas etapas a saber:
@@ -185,12 +193,15 @@ A análise foi divida em duas etapas a saber:
 * E a segunda objetivando ir a um nível de maior detalhamento, tratamentos finos e preparação da apresentação dos resultados.
 
 <br />
+
 ### 3.1 Análise Primária: Tratamentos Iniciais
 
 #### 3.1.1 Iniciar o serviço para o Mongo DB
 
 <br />
+
 ***No Terminal Windows (CMD):***
+
 ```
 mkdir "C:\Program Files\MongoDB\Data\"
 cd "C:\Program Files\MongoDB\Server\3.2\bin"
@@ -198,15 +209,18 @@ mongod --dbpath="C:/Program Files/MongoDB/Data"
 ```
 
 <br />
+
 #### 3.1.2 Exportar os Tuítes em arquivo JSON (apenas backup)
 
 ***No Terminal Windows (CMD):***
+
 ```
 cd “C:\Program Files\MongoDB\Server\3.2\bin”
 mongoexport --db TwitterListenerPlus --collection Tweets --out "Tweets.json"
 ```
 
 <br />
+
 #### 3.1.3 Implementação do MapReduce
 
 MapReduce é um modelo de programação e framework introduzido pela [Google](https://www.google.com) para suportar computações paralelas em grandes coleções de dados em clusters de computadores. Aqui, foi realizado em apenas um cluster: o desktop Windows.
@@ -269,6 +283,7 @@ var reduce_fn = function (key, value)
 ***Chamada da função MapReduce para a coleção “Tweets”:***
 
 O resultado é armazenado numa nova _collection_ chamada “Terms”.
+
 ```javascript
 var result = db.Tweets.mapReduce(
                         map_fn,
