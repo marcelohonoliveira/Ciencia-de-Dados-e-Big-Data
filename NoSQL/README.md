@@ -13,6 +13,6 @@ Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](http
 
 5. [Aula 05](Aula05) - Casos de Uso
 
-6. [Seminários](NoSQL/Seminarios) - Apresentação do Case Cartola FC e MongoDB
+6. [Seminários](Seminarios) - Apresentação do Case Cartola FC e MongoDB
 
-7. [Trabalho Prático](NoSQL/TrabalhoPratico) - Desenvolvimento, Análise e Resultados do Trabalho Prático
+7. [Trabalho Prático](TrabalhoPratico) - Desenvolvimento, Análise e Resultados do Trabalho Prático
