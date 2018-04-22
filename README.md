@@ -27,3 +27,9 @@ Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](http
 6. [Seminários](NoSQL/Seminarios) - Apresentação do Case Cartola FC e MongoDB
 
 7. [Trabalho Prático](NoSQL/TrabalhoPratico) - Desenvolvimento, Análise e Resultados do Trabalho Prático
+
+
+## [TCC - Trabalho de Conclusão de Curso](TCC)
+Título: Fluxo de Trabalho KNIME - Ferramenta de Web Scraping no apoio à Análise Linguística: a construção um de Corpus Textual
+
+Relatório Técnico e demais artefatos gerados no desenvolvimento do trabalho disponíveis [aqui](TCC).
