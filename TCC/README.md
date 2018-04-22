@@ -10,6 +10,6 @@ O trabalho mostra os passos realizados no desenvolvimento de um fluxo de dados p
 As atividades realizadas no caso apresentado podem servir de referência para novas coletas onde as técnicas de Web Scraping se aplicam e concernentes às limitações próprias de uma coleta automática na web.
 
 
-1. [Texto do TCC](Desafio) - Relatório Técnico - Versão Final Aprovada
+1. [Texto do TCC](CDBD_TCC_Knime_Marcelo_Honorio_de_Oliveira.pdf) - Relatório Técnico - Versão Final Aprovada
 
-2. [Artefatos Gerados](ArtigoLeiDeBenford) - Fluxo de Trabalho do KNIME e Arquivos Coletados
+2. [Artefatos Gerados](Data Driven Analysis - Modals Verbs.zip) - Fluxo de Trabalho do KNIME e Arquivos Coletados
