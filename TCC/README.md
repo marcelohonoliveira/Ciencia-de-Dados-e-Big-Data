@@ -1,4 +1,4 @@
-<img src="/zImagens/capa-tcc.png" align="right" width="25%" height="25%"/>
+<img src="/zImagens/tcc-capa.png" align="right" width="25%" height="25%"/>
 
 ## [TCC - Trabalho de Conclusão de Curso](/LinguagensEstatisticas)
 Fluxo de Trabalho KNIME - Ferramenta de Web Scraping no apoio à Análise Linguística: a construção um de Corpus Textual
