@@ -11,4 +11,4 @@ As atividades realizadas no caso apresentado podem servir de referência para no
 
 1. [Texto do TCC](CDBD_TCC_Knime_Marcelo_Honorio_de_Oliveira.pdf) - Relatório Técnico - Versão Final Aprovada
 
-2. [Artefatos Gerados](Data_Driven_Analysis_-_Modals_Verbs.zip) - Fluxo de Trabalho do KNIME e Arquivos Coletados
+2. [Artefatos Gerados](Data_Driven_Analysis_-_Modals_Verbs.zip) - Fluxo de Trabalho do KNIME
