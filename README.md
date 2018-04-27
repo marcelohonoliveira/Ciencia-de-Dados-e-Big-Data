@@ -30,6 +30,6 @@ Soluções dos exercícios propostos nos Slides de Aula disponíveis [aqui](http
 
 
 ## [TCC - Trabalho de Conclusão de Curso](TCC)
-Título: Fluxo de Trabalho KNIME - Ferramenta de Web Scraping no apoio à Análise Linguística: a construção de um Corpus Textual
+### Web Scraping no apoio à Análise Linguística: Construção de um Corpus Textual
 
 Relatório Técnico e demais artefatos gerados no desenvolvimento do trabalho disponíveis [aqui](TCC).
