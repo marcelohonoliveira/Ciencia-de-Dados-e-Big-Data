@@ -4,4 +4,4 @@
 ## [AM - Aprendizado de Máquina](/ML)
 Trabalhos apresentados nesta disciplina
 
-1. [Trabalho Orientado](TrabalhoOrientado) - Trabalho de desenvolvimento da análise do problema, modelo e testes.
+1. [Trabalho Orientado](TrabalhoOrientado) - Análise do problema, análise exploratória dos dados e desenvolvimento e ajuste dos modelos Support Vector Machines (SVM) e K-Nearest Neighbors (KNN). As acurácias foram 97.67% e 92.56% respectivamente.
