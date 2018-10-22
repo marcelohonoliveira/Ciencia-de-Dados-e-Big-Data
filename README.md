@@ -3,6 +3,13 @@
 # Ciência de Dados e Big Data
 Repositório dedicado às atividades do Curso de Pós-gradução em Ciência de Dados e Big Data (Oferta 1) da PUC Minas - Campus Praça da Liberdade - Belo Horizonte/MG.
 
+
+## [AM - Aprendizado de Máquina](ML)
+Trabalhos apresentados nesta disciplina
+
+1. [Trabalho Orientado](ML/TrabalhoOrientado) - Análise do problema, análise exploratória dos dados e desenvolvimento e ajuste dos modelos Support Vector Machines (SVM) e K-Nearest Neighbors (KNN). As acurácias foram 97.67% e 92.56% respectivamente.
+
+
 ## [ILE - Introdução às Linguagens Estatísticas](LinguagensEstatisticas)
 Trabalhos apresentados nesta disciplina
 
